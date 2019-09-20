@@ -24,7 +24,7 @@ namespace media2
 
             if (media > 9.0){
                 Console.WriteLine("Parabens você passou!");
-            } else if ((media >=7.0) && (media < 9.0)){
+            } else if ((media >=7.0) && (media <= 9.0)){
                 Console.WriteLine("iai parça passou de raspa");
             }
             else{

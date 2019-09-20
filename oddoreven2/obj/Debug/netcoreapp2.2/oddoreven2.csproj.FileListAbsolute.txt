@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\obj\Debug\netcoreapp2.2\oddoreven2.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\obj\Debug\netcoreapp2.2\oddoreven2.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\obj\Debug\netcoreapp2.2\oddoreven2.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\obj\Debug\netcoreapp2.2\oddoreven2.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\bin\Debug\netcoreapp2.2\oddoreven2.deps.json
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\bin\Debug\netcoreapp2.2\oddoreven2.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\bin\Debug\netcoreapp2.2\oddoreven2.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\bin\Debug\netcoreapp2.2\oddoreven2.dll
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\bin\Debug\netcoreapp2.2\oddoreven2.pdb
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\obj\Debug\netcoreapp2.2\oddoreven2.dll
+C:\Users\52965431810\Documents\Exercicios\oddoreven2\obj\Debug\netcoreapp2.2\oddoreven2.pdb
