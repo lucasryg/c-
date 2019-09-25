@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Hello
+namespace EX.vetor
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] vetor = new int[10];
         }
     }
 }

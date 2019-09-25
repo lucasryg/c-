@@ -23,8 +23,7 @@ namespace menu
             num = int.Parse(Console.ReadLine());
             
 
-            do{
-
+            
             switch(num) {
                     case 1:
                     Console.WriteLine("Digite quantos metros de altura tem sua figura:");
@@ -73,8 +72,7 @@ namespace menu
                     l = float.Parse(Console.ReadLine());
                     Console.WriteLine($"Seu quadrado tem {h} metros de altura, {l} metros de largura, e sua área mede: {(h*l)/2} metros quadrados!");
                     break;
-        
-            }while(num != 0);
-            }
-        }
+                    -
+                }
     }
+}

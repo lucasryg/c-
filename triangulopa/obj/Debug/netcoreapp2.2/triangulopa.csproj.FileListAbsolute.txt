@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\triangulopa\obj\Debug\netcoreapp2.2\triangulopa.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\triangulopa\obj\Debug\netcoreapp2.2\triangulopa.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\triangulopa\obj\Debug\netcoreapp2.2\triangulopa.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\triangulopa\obj\Debug\netcoreapp2.2\triangulopa.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\triangulopa\bin\Debug\netcoreapp2.2\triangulopa.deps.json
+C:\Users\52965431810\Documents\Exercicios\triangulopa\bin\Debug\netcoreapp2.2\triangulopa.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\triangulopa\bin\Debug\netcoreapp2.2\triangulopa.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\triangulopa\bin\Debug\netcoreapp2.2\triangulopa.dll
+C:\Users\52965431810\Documents\Exercicios\triangulopa\bin\Debug\netcoreapp2.2\triangulopa.pdb
+C:\Users\52965431810\Documents\Exercicios\triangulopa\obj\Debug\netcoreapp2.2\triangulopa.dll
+C:\Users\52965431810\Documents\Exercicios\triangulopa\obj\Debug\netcoreapp2.2\triangulopa.pdb
