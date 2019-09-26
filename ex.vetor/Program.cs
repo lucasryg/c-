@@ -11,9 +11,8 @@ namespace ex.vetor
             int npar = 0;
             int nimpar = 0;
 
-            Console.WriteLine("Digite um numero");
             for(int i = 0; i < 6; i++){
-                Console.WriteLine("Vetor [" + i + "]");
+                Console.WriteLine($"Digite o {i + 1} numero");
                 vetor [i] = Convert.ToInt32(Console.ReadLine());
             }
             
@@ -26,13 +25,6 @@ namespace ex.vetor
             }
             Console.WriteLine("Total de numeros pares: " + npar);
             Console.WriteLine("Total de numeros impares: " + nimpar);
-
-
-
-
-
-
-
         }
     }
 }

@@ -16,7 +16,7 @@ namespace triangulopa501
             altura = int.Parse(Console.ReadLine());
 
             for(int triangulos = 0; qnt <= 0; triangulos++){
-                Console.WriteLine(altura * "*");
+                // Console.WriteLine(altura * "*");
             }
         }
     }

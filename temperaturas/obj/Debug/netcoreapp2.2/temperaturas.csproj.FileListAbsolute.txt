@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\temperaturas\obj\Debug\netcoreapp2.2\temperaturas.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\temperaturas\obj\Debug\netcoreapp2.2\temperaturas.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\temperaturas\obj\Debug\netcoreapp2.2\temperaturas.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\temperaturas\obj\Debug\netcoreapp2.2\temperaturas.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\temperaturas\bin\Debug\netcoreapp2.2\temperaturas.deps.json
+C:\Users\52965431810\Documents\Exercicios\temperaturas\bin\Debug\netcoreapp2.2\temperaturas.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\temperaturas\bin\Debug\netcoreapp2.2\temperaturas.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\temperaturas\bin\Debug\netcoreapp2.2\temperaturas.dll
+C:\Users\52965431810\Documents\Exercicios\temperaturas\bin\Debug\netcoreapp2.2\temperaturas.pdb
+C:\Users\52965431810\Documents\Exercicios\temperaturas\obj\Debug\netcoreapp2.2\temperaturas.dll
+C:\Users\52965431810\Documents\Exercicios\temperaturas\obj\Debug\netcoreapp2.2\temperaturas.pdb

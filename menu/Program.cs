@@ -72,7 +72,8 @@ namespace menu
                     l = float.Parse(Console.ReadLine());
                     Console.WriteLine($"Seu quadrado tem {h} metros de altura, {l} metros de largura, e sua área mede: {(h*l)/2} metros quadrados!");
                     break;
-                    -
+                    
                 }
     }
+}
 }
