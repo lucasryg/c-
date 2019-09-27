@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\obj\Debug\netcoreapp2.2\MCbonalds_classes.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\obj\Debug\netcoreapp2.2\MCbonalds_classes.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\obj\Debug\netcoreapp2.2\MCbonalds_classes.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\obj\Debug\netcoreapp2.2\MCbonalds_classes.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\bin\Debug\netcoreapp2.2\MCbonalds_classes.deps.json
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\bin\Debug\netcoreapp2.2\MCbonalds_classes.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\bin\Debug\netcoreapp2.2\MCbonalds_classes.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\bin\Debug\netcoreapp2.2\MCbonalds_classes.dll
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\bin\Debug\netcoreapp2.2\MCbonalds_classes.pdb
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\obj\Debug\netcoreapp2.2\MCbonalds_classes.dll
+C:\Users\52965431810\Documents\Exercicios\MCbonalds_classes\obj\Debug\netcoreapp2.2\MCbonalds_classes.pdb
