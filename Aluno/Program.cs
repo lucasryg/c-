@@ -36,8 +36,8 @@ namespace Aluno
             Console.WriteLine("Curso: " + aluno3.Curso);
             Console.WriteLine("Notas: ");
 
-            foreach(int n in aluno3.getNotas()){
-                Console.Write(n = " "); 
+            foreach(int nba in aluno3.getNotas()){
+                // Console.Write( nba = " "); //Dando erro sem erro
             }
             Console.WriteLine();
 

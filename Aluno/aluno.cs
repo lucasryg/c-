@@ -23,7 +23,7 @@ namespace Aluno
             int i = bi - 1;
             if((i < 0) || (i > 3)){
                 //Condição de Erro;
-                throw new ArgumentOutOfRangeException($"{nameof(value)} mus");
+                // throw new ArgumentOutOfRangeException($"{nameof(value)} mus");
             }
         }
     }
