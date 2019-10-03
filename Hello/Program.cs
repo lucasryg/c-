@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace EX.vetor
 {
@@ -6,7 +7,8 @@ namespace EX.vetor
     {
         static void Main(string[] args)
         {
-            int[] vetor = new int[10];
+            
+
         }
     }
 }
