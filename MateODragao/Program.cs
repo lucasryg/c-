@@ -173,7 +173,7 @@ namespace MateODragao {
         public static void FinalizarDialogo () {
             System.Console.WriteLine ();
             System.Console.WriteLine ("Aperte ENTER para prosseguir!");
-            Console.ReadLine ();
+            Console.ReadLine ();    
             Console.Clear ();
         }
 
