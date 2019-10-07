@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\52965431810\\Documents\\Exercicios\\byte_bank\\byte_bank.csproj": {}
+    "C:\\Users\\52965431810\\Documents\\Exercicios\\TodoList\\TodoList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\52965431810\\Documents\\Exercicios\\byte_bank\\byte_bank.csproj": {
+    "C:\\Users\\52965431810\\Documents\\Exercicios\\TodoList\\TodoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\52965431810\\Documents\\Exercicios\\byte_bank\\byte_bank.csproj",
-        "projectName": "byte_bank",
-        "projectPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\byte_bank\\byte_bank.csproj",
+        "projectUniqueName": "C:\\Users\\52965431810\\Documents\\Exercicios\\TodoList\\TodoList.csproj",
+        "projectName": "TodoList",
+        "projectPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\TodoList\\TodoList.csproj",
         "packagesPath": "C:\\Users\\52965431810\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\byte_bank\\obj\\",
+        "outputPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\TodoList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

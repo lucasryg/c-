@@ -9,3 +9,9 @@ C:\Users\52965431810\Documents\Exercicios\byte_bank\bin\Debug\netcoreapp2.2\byte
 C:\Users\52965431810\Documents\Exercicios\byte_bank\bin\Debug\netcoreapp2.2\byte_bank.pdb
 C:\Users\52965431810\Documents\Exercicios\byte_bank\obj\Debug\netcoreapp2.2\byte_bank.dll
 C:\Users\52965431810\Documents\Exercicios\byte_bank\obj\Debug\netcoreapp2.2\byte_bank.pdb
+C:\Users\52965431810\Documents\Exercicios\byte_bank-meu\obj\Debug\netcoreapp2.2\byte_bank.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\byte_bank-meu\obj\Debug\netcoreapp2.2\byte_bank.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\byte_bank-meu\obj\Debug\netcoreapp2.2\byte_bank.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\byte_bank-meu\obj\Debug\netcoreapp2.2\byte_bank.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\byte_bank-meu\obj\Debug\netcoreapp2.2\byte_bank.dll
+C:\Users\52965431810\Documents\Exercicios\byte_bank-meu\obj\Debug\netcoreapp2.2\byte_bank.pdb
