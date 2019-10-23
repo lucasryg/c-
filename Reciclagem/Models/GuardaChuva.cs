@@ -3,11 +3,9 @@ using Reciclagem.Interfaces;
 
 namespace Reciclagem.Models
 {
-    public class GuardaChuva : TiposLixo, Ilixos
-    {
-        public bool jogarLixo(){
-            System.Console.WriteLine("Sua lixeira é da cor Cinza - Indefinido");
-            return true;
+    public class GuardaChuva : TiposLixo, IIndefinido{
+        public string ReciclarComo(){
+            return this.GetType().Name;
         }
     }
 }

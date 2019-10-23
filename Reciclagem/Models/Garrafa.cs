@@ -3,11 +3,10 @@ using Reciclagem.Interfaces;
 
 namespace Reciclagem.Models
 {
-    public class Garrafa : TiposLixo, Ilixos
+    public class Garrafa : TiposLixo, IVidro
     {
-        public bool jogarLixo (){
-            System.Console.WriteLine("Sua lixeira é o da cor Verde - Vidro");
-            return true;
+        public string ReciclarTipoVidro (){
+            return this.GetType().Name;
         }
     }
 }

@@ -3,11 +3,10 @@ using Reciclagem.Interfaces;
 
 namespace Reciclagem.Models
 {
-    public class PoteManteiga : TiposLixo, Ilixos
+    public class PoteManteiga : TiposLixo, IPlastico
     {
-        public bool jogarLixo () {
-            System.Console.WriteLine ("O lixo devera ser mandado para a composteira");
-            return true;
+        public string ReciclarTipoPlastico () {
+            return this.GetType().Name;
         }
     }
 }

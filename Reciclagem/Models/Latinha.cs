@@ -3,11 +3,10 @@ using Reciclagem.Interfaces;
 
 namespace Reciclagem.Models
 {
-    public class Latinha : TiposLixo, Ilixos
+    public class Latinha : TiposLixo, IMetal
     {
-        public bool jogarLixo(){
-            System.Console.WriteLine("Sua lixeira é da cor Amarela - Metal");
-            return true;
+        public string ReciclarTipoMetal(){
+            return this.GetType().Name;
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\bin\Debug\netcoreapp2.2\retangulo.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\bin\Debug\netcoreapp2.2\retangulo.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\bin\Debug\netcoreapp2.2\retangulo.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\bin\Debug\netcoreapp2.2\retangulo.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\bin\Debug\netcoreapp2.2\retangulo.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\obj\Debug\netcoreapp2.2\retangulo.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\obj\Debug\netcoreapp2.2\retangulo.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\obj\Debug\netcoreapp2.2\retangulo.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\obj\Debug\netcoreapp2.2\retangulo.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\obj\Debug\netcoreapp2.2\retangulo.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\retangulo\obj\Debug\netcoreapp2.2\retangulo.pdb

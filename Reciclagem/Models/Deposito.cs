@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Reciclagem.Interfaces;
 
 namespace Reciclagem.Models
 {

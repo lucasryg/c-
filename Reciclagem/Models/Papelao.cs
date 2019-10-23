@@ -3,11 +3,10 @@ using Reciclagem.Interfaces;
 
 namespace Reciclagem.Models
 {
-    public class Papelao : TiposLixo, Ilixos
+    public class Papelao : TiposLixo, IPapel
     {
-        public bool jogarLixo(){
-            System.Console.WriteLine("Sua lixeria é da cor Azul - Papel");
-            return true;
+        public string ReciclarTipoPapel(){
+            return this.GetType().Name;
         }
     }
 }
