@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\obj\Debug\netcoreapp2.2\AB.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\obj\Debug\netcoreapp2.2\AB.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\obj\Debug\netcoreapp2.2\AB.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\obj\Debug\netcoreapp2.2\AB.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\bin\Debug\netcoreapp2.2\AB.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\bin\Debug\netcoreapp2.2\AB.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\bin\Debug\netcoreapp2.2\AB.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\bin\Debug\netcoreapp2.2\AB.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\bin\Debug\netcoreapp2.2\AB.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\obj\Debug\netcoreapp2.2\AB.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\AB.EX5\obj\Debug\netcoreapp2.2\AB.pdb

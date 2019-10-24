@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\bin\Debug\netcoreapp2.2\multi.EX10.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\bin\Debug\netcoreapp2.2\multi.EX10.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\bin\Debug\netcoreapp2.2\multi.EX10.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\bin\Debug\netcoreapp2.2\multi.EX10.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\bin\Debug\netcoreapp2.2\multi.EX10.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\obj\Debug\netcoreapp2.2\multi.EX10.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\obj\Debug\netcoreapp2.2\multi.EX10.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\obj\Debug\netcoreapp2.2\multi.EX10.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\obj\Debug\netcoreapp2.2\multi.EX10.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\obj\Debug\netcoreapp2.2\multi.EX10.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\multi.EX10\obj\Debug\netcoreapp2.2\multi.EX10.pdb

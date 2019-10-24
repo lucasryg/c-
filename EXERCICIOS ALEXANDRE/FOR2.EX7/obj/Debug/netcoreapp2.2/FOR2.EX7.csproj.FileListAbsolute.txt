@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\obj\Debug\netcoreapp2.2\FOR2.EX7.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\obj\Debug\netcoreapp2.2\FOR2.EX7.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\obj\Debug\netcoreapp2.2\FOR2.EX7.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\obj\Debug\netcoreapp2.2\FOR2.EX7.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\bin\Debug\netcoreapp2.2\FOR2.EX7.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\bin\Debug\netcoreapp2.2\FOR2.EX7.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\bin\Debug\netcoreapp2.2\FOR2.EX7.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\bin\Debug\netcoreapp2.2\FOR2.EX7.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\bin\Debug\netcoreapp2.2\FOR2.EX7.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\obj\Debug\netcoreapp2.2\FOR2.EX7.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\FOR2.EX7\obj\Debug\netcoreapp2.2\FOR2.EX7.pdb

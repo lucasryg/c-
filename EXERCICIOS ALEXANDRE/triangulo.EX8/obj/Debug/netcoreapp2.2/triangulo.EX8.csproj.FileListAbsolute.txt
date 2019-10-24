@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\obj\Debug\netcoreapp2.2\triangulo.EX8.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\obj\Debug\netcoreapp2.2\triangulo.EX8.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\obj\Debug\netcoreapp2.2\triangulo.EX8.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\obj\Debug\netcoreapp2.2\triangulo.EX8.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\bin\Debug\netcoreapp2.2\triangulo.EX8.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\bin\Debug\netcoreapp2.2\triangulo.EX8.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\bin\Debug\netcoreapp2.2\triangulo.EX8.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\bin\Debug\netcoreapp2.2\triangulo.EX8.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\bin\Debug\netcoreapp2.2\triangulo.EX8.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\obj\Debug\netcoreapp2.2\triangulo.EX8.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\triangulo.EX8\obj\Debug\netcoreapp2.2\triangulo.EX8.pdb

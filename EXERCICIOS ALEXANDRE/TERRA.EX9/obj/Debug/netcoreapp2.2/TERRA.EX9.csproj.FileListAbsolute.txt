@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\obj\Debug\netcoreapp2.2\TERRA.EX9.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\obj\Debug\netcoreapp2.2\TERRA.EX9.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\obj\Debug\netcoreapp2.2\TERRA.EX9.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\obj\Debug\netcoreapp2.2\TERRA.EX9.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\bin\Debug\netcoreapp2.2\TERRA.EX9.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\bin\Debug\netcoreapp2.2\TERRA.EX9.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\bin\Debug\netcoreapp2.2\TERRA.EX9.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\bin\Debug\netcoreapp2.2\TERRA.EX9.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\bin\Debug\netcoreapp2.2\TERRA.EX9.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\obj\Debug\netcoreapp2.2\TERRA.EX9.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\TERRA.EX9\obj\Debug\netcoreapp2.2\TERRA.EX9.pdb

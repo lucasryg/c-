@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\obj\Debug\netcoreapp2.2\dororeven.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\obj\Debug\netcoreapp2.2\dororeven.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\obj\Debug\netcoreapp2.2\dororeven.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\obj\Debug\netcoreapp2.2\dororeven.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\bin\Debug\netcoreapp2.2\dororeven.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\bin\Debug\netcoreapp2.2\dororeven.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\bin\Debug\netcoreapp2.2\dororeven.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\bin\Debug\netcoreapp2.2\dororeven.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\bin\Debug\netcoreapp2.2\dororeven.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\obj\Debug\netcoreapp2.2\dororeven.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\oddoreven.EX4\obj\Debug\netcoreapp2.2\dororeven.pdb
