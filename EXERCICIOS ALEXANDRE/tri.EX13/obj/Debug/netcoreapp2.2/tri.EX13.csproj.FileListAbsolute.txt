@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\obj\Debug\netcoreapp2.2\tri.EX13.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\obj\Debug\netcoreapp2.2\tri.EX13.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\obj\Debug\netcoreapp2.2\tri.EX13.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\obj\Debug\netcoreapp2.2\tri.EX13.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\bin\Debug\netcoreapp2.2\tri.EX13.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\bin\Debug\netcoreapp2.2\tri.EX13.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\bin\Debug\netcoreapp2.2\tri.EX13.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\bin\Debug\netcoreapp2.2\tri.EX13.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\bin\Debug\netcoreapp2.2\tri.EX13.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\obj\Debug\netcoreapp2.2\tri.EX13.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\tri.EX13\obj\Debug\netcoreapp2.2\tri.EX13.pdb
