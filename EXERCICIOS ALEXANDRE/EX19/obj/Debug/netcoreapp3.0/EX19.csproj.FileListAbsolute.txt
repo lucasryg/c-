@@ -1,0 +1,11 @@
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\obj\Debug\netcoreapp3.0\EX19.csprojAssemblyReference.cache
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\obj\Debug\netcoreapp3.0\EX19.AssemblyInfoInputs.cache
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\obj\Debug\netcoreapp3.0\EX19.AssemblyInfo.cs
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\bin\Debug\netcoreapp3.0\EX19.exe
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\bin\Debug\netcoreapp3.0\EX19.deps.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\bin\Debug\netcoreapp3.0\EX19.runtimeconfig.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\bin\Debug\netcoreapp3.0\EX19.runtimeconfig.dev.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\bin\Debug\netcoreapp3.0\EX19.dll
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\bin\Debug\netcoreapp3.0\EX19.pdb
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\obj\Debug\netcoreapp3.0\EX19.dll
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\EX19\obj\Debug\netcoreapp3.0\EX19.pdb

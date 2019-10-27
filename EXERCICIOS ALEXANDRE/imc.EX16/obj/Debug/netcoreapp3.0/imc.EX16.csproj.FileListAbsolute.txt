@@ -1,0 +1,11 @@
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\obj\Debug\netcoreapp3.0\imc.EX16.csprojAssemblyReference.cache
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\obj\Debug\netcoreapp3.0\imc.EX16.AssemblyInfoInputs.cache
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\obj\Debug\netcoreapp3.0\imc.EX16.AssemblyInfo.cs
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\bin\Debug\netcoreapp3.0\imc.EX16.exe
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\bin\Debug\netcoreapp3.0\imc.EX16.deps.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\bin\Debug\netcoreapp3.0\imc.EX16.runtimeconfig.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\bin\Debug\netcoreapp3.0\imc.EX16.runtimeconfig.dev.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\bin\Debug\netcoreapp3.0\imc.EX16.dll
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\bin\Debug\netcoreapp3.0\imc.EX16.pdb
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\obj\Debug\netcoreapp3.0\imc.EX16.dll
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\imc.EX16\obj\Debug\netcoreapp3.0\imc.EX16.pdb

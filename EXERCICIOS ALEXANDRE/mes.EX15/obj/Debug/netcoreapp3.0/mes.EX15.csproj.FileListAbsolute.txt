@@ -1,0 +1,11 @@
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\obj\Debug\netcoreapp3.0\mes.EX15.csprojAssemblyReference.cache
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\obj\Debug\netcoreapp3.0\mes.EX15.AssemblyInfoInputs.cache
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\obj\Debug\netcoreapp3.0\mes.EX15.AssemblyInfo.cs
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\bin\Debug\netcoreapp3.0\mes.EX15.exe
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\bin\Debug\netcoreapp3.0\mes.EX15.deps.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\bin\Debug\netcoreapp3.0\mes.EX15.runtimeconfig.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\bin\Debug\netcoreapp3.0\mes.EX15.runtimeconfig.dev.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\bin\Debug\netcoreapp3.0\mes.EX15.dll
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\bin\Debug\netcoreapp3.0\mes.EX15.pdb
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\obj\Debug\netcoreapp3.0\mes.EX15.dll
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\mes.EX15\obj\Debug\netcoreapp3.0\mes.EX15.pdb

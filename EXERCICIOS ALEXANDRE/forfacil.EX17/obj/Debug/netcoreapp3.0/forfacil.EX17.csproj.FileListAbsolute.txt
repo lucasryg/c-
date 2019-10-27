@@ -1,0 +1,11 @@
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\bin\Debug\netcoreapp3.0\forfacil.EX17.exe
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\bin\Debug\netcoreapp3.0\forfacil.EX17.deps.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\bin\Debug\netcoreapp3.0\forfacil.EX17.runtimeconfig.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\bin\Debug\netcoreapp3.0\forfacil.EX17.runtimeconfig.dev.json
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\bin\Debug\netcoreapp3.0\forfacil.EX17.dll
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\bin\Debug\netcoreapp3.0\forfacil.EX17.pdb
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\obj\Debug\netcoreapp3.0\forfacil.EX17.csprojAssemblyReference.cache
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\obj\Debug\netcoreapp3.0\forfacil.EX17.AssemblyInfoInputs.cache
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\obj\Debug\netcoreapp3.0\forfacil.EX17.AssemblyInfo.cs
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\obj\Debug\netcoreapp3.0\forfacil.EX17.dll
+C:\Users\Lucas\Desktop\c#\c-\EXERCICIOS ALEXANDRE\forfacil.EX17\obj\Debug\netcoreapp3.0\forfacil.EX17.pdb
