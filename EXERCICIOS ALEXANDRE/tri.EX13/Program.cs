@@ -22,7 +22,7 @@ namespace tri.EX13 {
             } else if ((num1 == num2) || (num2 == num3) || (num1 == num3)) {
                 System.Console.WriteLine ("Triangulo Isosceles");
             } else if ((num1 < num2 + num3) || (num2 < num3 + num1) || (num3 < num1 + num2)) {
-                System.Console.WriteLine ("Triangulo escaleno");
+                System.Console.WriteLine ("Triangulo escaleno"); 
             }
 
         }

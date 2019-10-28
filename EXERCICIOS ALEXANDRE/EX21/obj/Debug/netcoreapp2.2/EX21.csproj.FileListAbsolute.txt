@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\obj\Debug\netcoreapp2.2\EX21.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\obj\Debug\netcoreapp2.2\EX21.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\obj\Debug\netcoreapp2.2\EX21.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\obj\Debug\netcoreapp2.2\EX21.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\bin\Debug\netcoreapp2.2\EX21.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\bin\Debug\netcoreapp2.2\EX21.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\bin\Debug\netcoreapp2.2\EX21.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\bin\Debug\netcoreapp2.2\EX21.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\bin\Debug\netcoreapp2.2\EX21.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\obj\Debug\netcoreapp2.2\EX21.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\EX21\obj\Debug\netcoreapp2.2\EX21.pdb
