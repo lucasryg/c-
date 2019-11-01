@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EX22
+namespace EX22   
 {
     class Program
     {
