@@ -1,0 +1,11 @@
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\bin\Debug\netcoreapp2.2\Zoologico.deps.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\bin\Debug\netcoreapp2.2\Zoologico.runtimeconfig.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\bin\Debug\netcoreapp2.2\Zoologico.runtimeconfig.dev.json
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\bin\Debug\netcoreapp2.2\Zoologico.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\bin\Debug\netcoreapp2.2\Zoologico.pdb
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.csprojAssemblyReference.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.csproj.CoreCompileInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.AssemblyInfoInputs.cache
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.AssemblyInfo.cs
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.dll
+C:\Users\52965431810\Documents\Exercicios\EXERCICIOS ALEXANDRE\Zoologico\obj\Debug\netcoreapp2.2\Zoologico.pdb

@@ -1,0 +1,25 @@
+﻿
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  text-align: center
+}
+
+h1{
+  text-align: center;
+  border: 5px;
+  border-color: brown;
+}
+
+#cabecalho{
+
+}
+
+#Perguntas{
+  text-align: right;
+}
+
+
