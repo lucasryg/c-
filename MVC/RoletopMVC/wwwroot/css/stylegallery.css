@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url(fotos/festas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 40%;   
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+a{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/**********************************************
+                INICIO NAV
+**********************************************/
+nav{
+    background-color:transparent;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.7em;
+    height: 5.5em ;
+    width: 100%;
+    align-items: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav li{
+    padding: .60em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+#ingresso {
+    height: 2em;
+}
+
+#logo{
+    height: 5em;
+}
+
+#rightside{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    flex-direction: row;
+}
+/**********************************************
+                FINAL NAV
+**********************************************/
+
+
+
+#pato-flex{
+    list-style-type: none;
+    display: flex; 
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#secnav{
+    background-color: black;
+}
+
+
+
+#gallery{
+    background-color: #7D0093;
+    width: 20em;
+    justify-content: flex-end;
+    
+}
+
+
+#imggallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#calendar > h3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#gallery > h3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#ftgallery li{
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#navone{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+}
+
+
+
+#closenav{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ftsone{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+#ftstwo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/**********************************************
+INICIO MAIN
+**********************************************/
+
+#ftgallery{
+    display: flex;
+    
+    align-items: center;
+    list-style-type: none;
+}
+
+
+#labelnews{
+    display: flex;  
+    justify-content: center;
+}
+
+#ftnews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around
+}
+
+
+
+
+
+
+/**********************************************
+                 FINAL MAIN
+**********************************************/
+
+/**********************************************
+                 INICIO SECTION
+**********************************************/
+
+#map{
+    display: flex;
+    justify-content: center;
+}
+
+.ftnews{
+display: flex;
+flex-direction: row;
+}
+
+
+
+
+
+/**********************************************
+                 FINAL SECTION
+**********************************************/
+
+
+
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+     background-color: black; 
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+a{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+a{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color:transparent;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.7em;
+    height: 5.5em ;
+    width: 100%;
+    align-items: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav li{
+    padding: .60em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+#ingresso {
+    height: 2em;
+}
+
+#logo{
+    height: 5em;
+}
+
+#rightside{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    flex-direction: row;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+
+#table{ 
+    justify-content: center;
+    align-items: center;
+   color: white
+}
+
+table th,td{
+    color: white;;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+
+}

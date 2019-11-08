@@ -12083,11 +12083,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\52965431810\\Documents\\Exercicios\\McBonaldsMVC\\McBonaldsMVC.csproj",
+      "projectUniqueName": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
       "projectName": "McBonaldsMVC",
-      "projectPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\McBonaldsMVC\\McBonaldsMVC.csproj",
+      "projectPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
       "packagesPath": "C:\\Users\\52965431810\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\McBonaldsMVC\\obj\\",
+      "outputPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

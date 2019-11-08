@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(fotos/festas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 40%;   
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+a{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+
+
+/**********************************************
+                INICIO NAV
+**********************************************/
+nav{
+    background-color:transparent;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.7em;
+    height: 5.5em ;
+    width: 100%;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav li{
+    padding: .60em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+#ingresso {
+    height: 2em;
+}
+
+#logo{
+    height: 5em;
+}
+
+#rightside{
+    display: flex;
+    position: absolute;
+    right: 50px;
+    flex-direction: row;
+}
+
+/**********************************************
+FINAL NAV
+**********************************************/
+#pato-flex{
+   display: flex;
+   justify-content: space-between;
+    background-color: black;
+}
+
+#calendar{
+    background-color: #FFC600;
+    width: 1000em;
+}   
+
+
+#imgcalendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+   
+
+#calendar > h3{
+    display: flex;
+    justify-content: center;
+
+}
+
+#closenav{
+    display: flex;
+    justify-content: end;
+    height: 50px;
+
+}
+
+#calendartwo{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+
+}
+/**********************************************
+INICIO MAIN
+**********************************************/
+
+
+
+
+
+
+
+
+/**********************************************
+FINAL MAIN
+**********************************************/
+
+/**********************************************
+                 INICIO SECTION
+**********************************************/
+
+#map{
+    display: flex;
+    justify-content: center;
+}
+
+#labelnews{
+    display: flex;  
+    justify-content: center;
+}
+
+
+#ftnews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around
+}
+
+
+
+
+/**********************************************
+                 FINAL SECTION
+**********************************************/
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+
+}

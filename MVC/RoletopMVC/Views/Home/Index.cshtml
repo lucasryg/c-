@@ -1,0 +1,77 @@
+﻿<body>
+<nav>
+<section id="secnav"> 
+
+        <div id="pato-flex" >
+        
+            <div id="calendar" title="calendário pagina inicial" style="border-top-width: 5px;border-top-style: solid;border-right-style: solid;border-bottom-width: 5px;border-bottom-style: solid;border-left-width: 5px;border-left-style: solid;border-right-width: 2px;">
+                <h3>Calendário</h3>
+                <div id="imgcalendar" >
+                    <a href="calendar.html"><img src="img/calendar (1).png" alt="Calendário" style="height: 110px;" height="200" >  </a>
+                </div>
+            </div>
+            <div id="gallery" title="galeria pagina inical"style="border-top-width: 5px;border-top-style: solid;border-left-width: 2px;border-left-style: solid;border-bottom-width: 5px;border-bottom-style: solid;border-right-width: 5px;border-right-style: solid;">
+                <h3>Galeria</h3>
+                    <div id="imggallery">
+                        <a href="gallery.html"> <img src="img/album.png" alt="Galeria" style="height: 120px;" height="200"></a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    </nav>
+    
+    <main>
+
+<section class="conteiner" style="background-color: black">
+    <div id="labelnews">
+        <h2>Noticías</h2>
+    </div>
+        <div id="ftnews">
+        
+                <img src="../fotos/Planeta-Atlantida2018.jpg" height="200"/>
+        
+        <div id="imgcenter">
+            <img src="fotos/Eventos.jpg" height="450"/>
+            </div>
+        
+        
+                <img src="fotos/12-IMG_6319-XL.jpg" height="200"/>
+            
+        </div>  
+</section>    
+        
+    <article id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8871329131093!2d-46.648477084407446!3d-23.536561566563428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda%20Bar%C3%A3o%20de%20Limeira%2C%20539%20-%20Campos%20El%C3%ADseos%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001202-001!5e0!3m2!1spt-BR!2sbr!4v1567454718809!5m2!1spt-BR!2sbr"
+        width="10000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>      
+    </article>
+
+    
+    
+</main>
+
+    <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+                ul.classList.toggle("mobile-mode");
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+            }
+            
+        </script>
+
+</body>
+</html>

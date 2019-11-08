@@ -4,8 +4,14 @@
   padding: 0;
 }
 
+
 nav{
-  text-align: center
+  text-align: center;
+}
+
+#fotoprincipal{
+  text-align: left;
+  width: 962px;
 }
 
 h1{
@@ -14,12 +20,15 @@ h1{
   border-color: brown;
 }
 
+#texto{
+  text-align: center;
+  justify-content: space-between;
+}
+
 #cabecalho{
 
 }
 
-#Perguntas{
-  text-align: right;
-}
+
 
 
