@@ -9,13 +9,13 @@ namespace McBonaldsMVC.Repositories
 
         public ClienteRepository()
         {
-            if(File.Exists(PATH))
+            if(!File.Exists(PATH))
             {
                 File.Create(PATH).Close();
             }
         }
 
-        public bool Iserir(Cliente cliente)
+        public bool Inserir(Cliente cliente)
         {
             var linha = new string[] {PrepararRegistroCSV(cliente)};
             File.AppendAllLines(PATH, linha);

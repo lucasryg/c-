@@ -17,7 +17,7 @@ namespace McBonaldsMVC.Controllers {
             {
                     Cliente cliente = new Cliente(form["nome"], form["endereco"], form["telefone"], form["senha"], form["email"], DateTime.Parse(form["data-nascimento"]));
 
-                    clienteRepository.Iserir(cliente);
+                    clienteRepository.Inserir(cliente);
 
                     return View("Sucesso");
             } 
