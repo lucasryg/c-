@@ -1,6 +1,2 @@
-cliente_nome=dwadwadwa;cliente_endereco=321321; cliente_telefone=321321321; cliente_email=dwadwa@dwad.com; hamburguer_nome=furioso; hamburguer_preco=0; shake_nome =Chocolate; shake_preco=0; data_Pedido=14/11/2019 16:02:28; precoTotal=0
-cliente_nome=dwadwa;cliente_endereco=; cliente_telefone=; cliente_email=; hamburguer_nome=combo; hamburguer_preco=0; shake_nome =Biscoito; shake_preco=0; data_Pedido=14/11/2019 16:03:11; precoTotal=0
-cliente_nome=;cliente_endereco=; cliente_telefone=; cliente_email=; hamburguer_nome=furioso; hamburguer_preco=0; shake_nome =Biscoito; shake_preco=0; data_Pedido=14/11/2019 16:03:22; precoTotal=0
-cliente_nome=;cliente_endereco=; cliente_telefone=; cliente_email=; hamburguer_nome=furioso; hamburguer_preco=0; shake_nome =Biscoito; shake_preco=0; data_Pedido=14/11/2019 16:04:02; precoTotal=0
-cliente_nome=;cliente_endereco=; cliente_telefone=; cliente_email=; hamburguer_nome=combo; hamburguer_preco=0; shake_nome =Chocolate; shake_preco=0; data_Pedido=14/11/2019 16:07:01; precoTotal=0
-cliente_nome=;cliente_endereco=; cliente_telefone=; cliente_email=; hamburguer_nome=Black Burguer; hamburguer_preco=0; shake_nome =Chocolate; shake_preco=0; data_Pedido=14/11/2019 17:04:17; precoTotal=0
+cliente_nome=luquitas;cliente_endereco=dwadwa; cliente_telefone=2132131; cliente_email=diwadw@gmail.com; hamburguer_nome=Combo Da Hora; hamburguer_preco=19,99; shake_nome =Biscoito; shake_preco=9,99; data_Pedido=18/11/2019 16:13:02; precoTotal=0
+cliente_nome=dwadwa;cliente_endereco=dwadwa; cliente_telefone=321321321; cliente_email=diwadw@gmail.com; hamburguer_nome=Black Burguer; hamburguer_preco=12,99; shake_nome =Biscoito; shake_preco=9,99; data_Pedido=18/11/2019 16:43:42; precoTotal=22,98

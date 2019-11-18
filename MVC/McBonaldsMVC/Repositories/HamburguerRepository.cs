@@ -6,8 +6,23 @@ namespace McBonaldsMVC.Repositories
 {
     public class HamburguerRepository
     {
-        private const string PATH = "Database/Hamburguer.csv";
+        private const string PATH = "Database/Hamburguer.csv";  
 
+        public double ObterPrecoDe(string nomeHamburguer)
+        {
+            var lista = ObterTodos();
+            var preco = 0.0;
+            foreach (var item in lista)
+            {
+                if (item.Nome.Equals(nomeHamburguer))
+                {
+                    preco = item.Preco;
+                    break;
+                }
+            }
+            return preco;
+        }
+    
         public List<Hamburguer> ObterTodos()
         {
             List<Hamburguer> hamburgueres = new List<Hamburguer>();
