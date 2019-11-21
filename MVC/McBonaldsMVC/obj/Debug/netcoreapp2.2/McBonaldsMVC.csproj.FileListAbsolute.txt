@@ -97,3 +97,4 @@ C:\Users\52965431810\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2
 C:\Users\52965431810\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.2\McBonaldsMVC.pdb
 C:\Users\52965431810\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.2\McBonaldsMVC.csproj.CopyComplete
 c:\Users\52965431810\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pedido\Index.g.cshtml.cs
+C:\Users\52965431810\Documents\Exercicios\MVC\McBonaldsMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Historico.g.cshtml.cs
