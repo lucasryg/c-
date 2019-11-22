@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoletopMVC\\RoletopMVC.csproj": {}
+    "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\RoleTopMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoletopMVC\\RoletopMVC.csproj": {
+    "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\RoleTopMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoletopMVC\\RoletopMVC.csproj",
-        "projectName": "RoletopMVC",
-        "projectPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoletopMVC\\RoletopMVC.csproj",
+        "projectUniqueName": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\RoleTopMVC.csproj",
+        "projectName": "RoleTopMVC",
+        "projectPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\RoleTopMVC.csproj",
         "packagesPath": "C:\\Users\\52965431810\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoletopMVC\\obj\\",
+        "outputPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

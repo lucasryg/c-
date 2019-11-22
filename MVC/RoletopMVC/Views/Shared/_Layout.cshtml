@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Role top</title>
-    <link href="~/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="img/logo.png" rel="icon" type="imag/x-icon">
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>   
 </head>
 
 <header>
+        <nav>
             <ul>
                     <li id="bt-mobile-menu">
                     <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
@@ -19,33 +20,12 @@
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()"><img id="logo" src="img/logo.png" alt="Logo" title="logo role top"></li>
                     <li style="height: 94px;"><a href="rent.html" class="bt-common-menu"><a onclick="toggleMobileMenu()"><img id="ingresso" src="img/tickts white.png" alt="Ingresso" title="icone para a alugar"></a><a href="rent.html">Alugue nosso espaço!</a></li>
                     <div id="rightside">
-                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("index","Home")#noticias'>Noticías</a></li>
-                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("index","Home")#galeria'>Galeria</a></li>
-                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("index","Home")#calendar'>Calendário</a></li>
-                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">Login</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("index" , "Home")#labelnews'>Noticías</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="gallery.html">Galeria</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="calendar.html">Calendário</a></li>
+                        <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Login" asp-action="login" >Login</a></li>
                         <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="cadaster.html">Criar conta</a></li>
                     </div>
             </ul>
 </header>
 @RenderBody()
-<footer style="height: 60px;">
-        <p> Endereço
-            <br/>
-            Alameida Barao De Limeira 539 </p>
-        <p> Contatos
-            <br/>
-        (11) 4002-8922 </p>
-
-        <a>FAQ 
-            <br/>
-            Clique aqui!
-        </a>
-
-        <div>
-                <p>Redes sociais:</p>
-            <a href="https://www.facebook.com/"><img src="img/facebookWhite.png" alt="Facebook" height="30-"></a>   
-            <img src="img/whatsapp white.png" alt="Whatsapp" height="30">
-            <img src="img/instagramWhite.png" alt="Instagram" height="30">
-        </div>
-        
-    </footer>
