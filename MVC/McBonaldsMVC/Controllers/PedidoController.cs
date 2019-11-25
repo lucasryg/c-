@@ -25,11 +25,26 @@ namespace McBonaldsMVC.Controllers
             {
                 pedido.Cliente = clienteRepository.ObterPor(emailCliente);
             }
+
             var nomeUsuario = ObterUsuarioNomeSession();
             if (!string.IsNullOrEmpty(nomeUsuario))
             {
                 pedido.NomeCliente = nomeUsuario;
             }
+            var usuarioLogado = ObterUsuarioSession();
+            var nomeUsuarioLogado = ObterUsuarioNomeSession();
+
+            var clienteLogado = clienteRepository.ObterPor(usuarioLogado);
+            {
+                if (clienteLogado != null)
+                {
+                    pedido.Cliente = clienteLogado;
+                }
+            }
+
+            pedido.NomeView = "Pedido";
+            pedido.UsuarioEmail = ObterUsuarioSession();
+            pedido.UsuarioNome = ObterUsuarioNomeSession();
 
             return View(pedido);
         }

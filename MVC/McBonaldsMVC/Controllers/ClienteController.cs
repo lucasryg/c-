@@ -13,7 +13,12 @@ namespace McBonaldsMVC.Controllers {
 
         [HttpGet]
         public IActionResult Login () {
-            return View ();
+            return View (new BaseViewModel()
+            {
+                NomeView = "Home",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession(),
+            });
         }
         [HttpPost]
         
