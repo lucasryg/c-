@@ -2,16 +2,16 @@ namespace McBonaldsMVC.Repositories
 {
     public class RepositoryBase
     {
-        protected string ExtrairValorDoCampo(string nomeCampo, string linha)
+         protected string ExtrairValorDoCampo(string nomeCampo, string linha)
         {
             var chave = nomeCampo;
             var indiceChave = linha.IndexOf(chave);
 
-            var indiceTerminal = linha.IndexOf(";" , indiceChave);
-            
-            var valor = " ";
-            
-            if (indiceTerminal != -1)
+            var indiceTerminal = linha.IndexOf(';', indiceChave);
+
+            var valor = "";
+
+            if(indiceTerminal != -1)
             {
                 valor = linha.Substring(indiceChave, indiceTerminal - indiceChave);
             }
@@ -20,7 +20,8 @@ namespace McBonaldsMVC.Repositories
                 valor = linha.Substring(indiceChave);
             }
             System.Console.WriteLine($"Campo {nomeCampo} e valor {valor}");
-            return valor.Replace(nomeCampo + "=","");
+            return valor.Replace(nomeCampo + "=", "");
         }
+
     }
 }

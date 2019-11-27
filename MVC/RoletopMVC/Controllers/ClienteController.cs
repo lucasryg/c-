@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RoleTopMVC.Controllers
 {
-    public class Login : Controller
+    public class ClienteController : Controller
     {
-        public IActionResult login()
+        public IActionResult Login()
         {
             return View();
         }

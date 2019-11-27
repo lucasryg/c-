@@ -1,0 +1,224 @@
+<link rel="stylesheet" type="text/css" href="~/css/stylecalendar.css"/>
+
+<link rel="stylesheet" type="text/css" href="~/css/style.css"/>
+
+<style>
+    <head>
+
+            .mes {
+
+                font: bold 25px verdana;
+
+                background: #f5f5f5;
+
+                text-align: center;
+
+                line-height: 40px;				
+
+                height: 40px;
+
+                width: 854px;
+
+            }
+
+            .semana {
+
+                font: bold 20px verdana;
+
+                background: #f5f5f5;
+
+                text-align: center;
+
+                line-height: 25px;						  
+
+                height: 25px;
+
+                width: 120px;
+
+            }
+
+            .dia {
+
+                background: #f5f5f5;
+
+                font: 20px verdana;				  
+
+                text-align: center;
+
+                height: 100px;
+
+                width: 100px;
+
+            }
+
+            .evento {
+
+                position: relative;
+
+                font: 9px verdana;
+
+                color: #C30;
+
+                right: -7px;
+
+                top: -9px;			  
+
+            }
+
+        </style>
+</head>
+<body>
+<nav>   
+<section id="secnav"  style="height: 720px;background-color: black;" > 
+        
+        <div id="pato-flex"  style="justify-content: space-between;">
+            
+            <div id="calendar" title="calendário pagina inicial" style="border-top-width: 5px;border-top-style: solid;border-right-style: solid;border-bottom-width: 5px;border-bottom-style: solid;border-left-width: 5px;border-left-style: solid;border-right-width: 5px;width: 300px;height: 140px;">
+                    <h3>Calendário</h3>
+                    <div id="imgcalendar" >
+                        <a href="calendar.html"><img src="../img/calendar (1).png" alt="Calendário" style="height: 110px;" height="200" >  </a>
+                    </div>
+                </div>
+                
+                <div id="closenav">     
+                    <a asp-controller="Home" asp-action="Index"><img src="../img/cancel white.png" alt="Fechar" title="fechar janela" style="width: 40px;padding-top: 10px;padding-right: 10px;"></a>
+                </div>
+            </div>
+        <!-- Calendario -->
+        <div id="calendartwo">
+
+        
+            <table>
+        
+                <caption class="mes">Setembro 2019</caption>
+        
+                <thead>
+        
+                    <tr>
+        
+                        <td class="dia"><div class="semana">D</td>
+        
+                        <td class="dia"><div class="semana">S</td>
+        
+                        <td class="dia"><div class="semana">T</td>
+        
+                        <td class="dia"><div class="semana">Q</td>
+        
+                        <td class="dia"><div class="semana">Q</td>
+        
+                        <td class="dia"><div class="semana">S</td>
+        
+                        <td class="dia"><div class="semana">S</td>
+        
+                    </tr>
+        
+                </thead>
+        
+                <tbody>
+        
+                    <tr>
+        
+                        <td class="dia">1<span class="evento"><img src="../img/logo.png" style="width: 50px;border-top-style: solid;border-top-width: 0px;"></span></td>
+        
+                        <td class="dia">2<span class="evento"></span></td>
+        
+                        <td class="dia">3<span class="evento"></span></td>
+        
+                        <td class="dia">4</td>
+        
+                        <td class="dia">5<span class="evento"><img src="../img/logo.png" style="width: 50px;border-top-style: solid;border-top-width: 0px;"></span></td>
+        
+                        <td class="dia">6</td>
+        
+                        <td class="dia">7</td>
+        
+                    </tr>
+        
+                    <tr>
+        
+                        <td class="dia">8<span class="evento"></span></td>
+        
+                        <td class="dia">9</td>
+        
+                        <td class="dia">10</td>
+        
+                        <td class="dia">11<span class="evento"><img src="../img/logo.png" style="width: 50px;border-top-style: solid;border-top-width: 0px;"></span></td>
+        
+                        <td class="dia">12</td>
+        
+                        <td class="dia">13<span class="evento"></span></td>
+        
+                        <td class="dia">14</td>
+        
+                    </tr>			
+        
+                    <tr>
+        
+                        <td class="dia">15<span class="evento"><img src="../img/logo.png" style="width: 50px;border-top-style: solid;border-top-width: 0px;"></span></td>
+        
+                        <td class="dia">16</td>
+        
+                        <td class="dia">17</td>
+        
+                        <td class="dia">18<span class="evento"><img src="../img/logo.png" style="width: 50px;border-top-style: solid;border-top-width: 0px;"></span></td>
+        
+                        <td class="dia">19</td>
+        
+                        <td class="dia">50<span class="evento"></span></td>
+        
+                        <td class="dia">21</td>
+        
+                    </tr>
+        
+                    <tr>
+        
+                        <td class="dia">22<span class="evento"><img src="../img/logo.png" style="width: 50px;border-top-style: solid;border-top-width: 0px;"></span></td>
+        
+                        <td class="dia">23</td>
+        
+                        <td class="dia">24</td>
+        
+                        <td class="dia">25<span class="evento"></span></td>
+        
+                        <td class="dia">26</td>
+        
+                        <td class="dia">27<span class="evento"></span></td>
+        
+                        <td class="dia">28</td>
+        
+                    </tr>
+        
+                </tbody>
+        
+            </table>
+        </div>
+        <!-- Calendario -->
+    </section>
+</nav>
+    
+<main>
+
+        <section class="conteiner" style="background-color: black">
+                <div id="labelnews">
+                    <h2>Noticías</h2>
+                </div>
+                    <div id="ftnews">
+                    
+                            <img src="../fotos/Planeta-Atlantida2018.jpg" height="200"/>
+                      
+                       <div id="imgcenter">
+                           <img src="../fotos/Eventos.jpg" height="450"/>
+                        </div>
+                     
+                       
+                            <img src="../fotos/12-IMG_6319-XL.jpg" height="200"/>
+                        
+                    </div>  
+            </section>    
+                    
+                <article id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8871329131093!2d-46.648477084407446!3d-23.536561566563428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda%20Bar%C3%A3o%20de%20Limeira%2C%20539%20-%20Campos%20El%C3%ADseos%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001202-001!5e0!3m2!1spt-BR!2sbr!4v1567454718809!5m2!1spt-BR!2sbr"
+                    width="10000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>      
+                </article>       
+</main>
+</body>

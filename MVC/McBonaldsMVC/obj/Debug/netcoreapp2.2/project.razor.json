@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
+  "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,72 +2961,72 @@
   "RootNamespace": "McBonaldsMVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Pedido\\Index.cshtml",
-      "TargetPath": "Views\\Pedido\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Cliente\\Login.cshtml",
-      "TargetPath": "Views\\Cliente\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Cadastro\\Index.cshtml",
-      "TargetPath": "Views\\Cadastro\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Cliente\\Historico.cshtml",
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Cliente\\Historico.cshtml",
       "TargetPath": "Views\\Cliente\\Historico.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Pedidos\\Index.cshtml",
+      "TargetPath": "Views\\Pedidos\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
       "TargetPath": "Views\\Shared\\_HeaderHomePage.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Shared\\Sucesso.cshtml",
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Shared\\Sucesso.cshtml",
       "TargetPath": "Views\\Shared\\Sucesso.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     }

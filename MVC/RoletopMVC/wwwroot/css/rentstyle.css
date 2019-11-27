@@ -8,6 +8,17 @@ body{
   list-style-type: none;
   font-family: 'Source Sans Pro', sans-serif;
 }
+p{
+  color: white;
+}
+a{
+  color: white;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+}
 /**********************************************
 INICIO NAV
 **********************************************/

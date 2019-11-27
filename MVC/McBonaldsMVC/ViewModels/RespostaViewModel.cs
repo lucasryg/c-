@@ -1,17 +1,14 @@
 namespace McBonaldsMVC.ViewModels
 {
-    public class RespostaViewModel
+    public class RespostaViewModel : BaseViewModel
     {
-        public string Mensagem {get;set;}
+     public string Mensagem {get;set;}
 
-        public RespostaViewModel()
+        public RespostaViewModel(string usuario)
         {
 
-        }
-
-        public RespostaViewModel(string mensagem)
-        {
-            this.Mensagem = mensagem;
         }
     }
+
+  
 }

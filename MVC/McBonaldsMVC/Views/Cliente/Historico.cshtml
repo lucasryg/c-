@@ -3,12 +3,17 @@
     ViewData["Title"] = "Pedidos - McBonald's";
     ViewData["H2"] = "Histórico de Pedidos";
 }
+<header>
+    <hgroup>
+        <h1>McBonald's</h1>
+    </hgroup>
+</header>
 
 <main>
     <h2>@ViewData["H2"]</h2>
     <table>
         <thead>
-            <tr> 
+            <tr>
                 <th>Data</th>
                 <th>Hamburguer</th>
                 <th>Shake</th>
@@ -16,7 +21,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach( var pedido in Model.Pedidos) {
+            @foreach( var pedido in Model.Pedidos ) {
                 <tr>
                     <td>@pedido.DataDoPedido</td>
                     <td>@pedido.Hamburguer.Nome</td>

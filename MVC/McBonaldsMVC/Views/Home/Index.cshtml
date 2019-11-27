@@ -1,4 +1,4 @@
-﻿<body>
+﻿
     <main>
         <section id="banner">
             <div class="section-container">
@@ -104,38 +104,4 @@
             </div>
         </section>
     </main>
-   
-
-    <!-- PASSO 6 - Adicione a tag script e seu conteúdo antes do body fechar -->
-    <!-- Agora vá para o style.css desse projeto! -->
-    <script>
-        function toggleMobileMenu() {
-            var ul = document.querySelector("nav ul");
-            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
-            var icon = document.querySelector(".icon > i");
-
-            ul.classList.toggle("mobile-mode");
-
-            if (icon.classList.contains("fa-bars")) {
-                icon.classList.remove("fa-bars");
-                icon.classList.remove("fa");
-
-                icon.classList.add("fas");
-                icon.classList.add("fa-skull");
-            } else {
-                icon.classList.remove("fas");
-                icon.classList.remove("fa-skull");
-
-                icon.classList.add("fa");
-                icon.classList.add("fa-bars");
-            }
-
-            for (var button of commonButtons) {
-                button.classList.toggle("active");
-            }
-
-        }
-        
-    </script>
-</body>
-</html>
+    

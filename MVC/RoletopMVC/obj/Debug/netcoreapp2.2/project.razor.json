@@ -2971,6 +2971,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Aluga\\rent.cshtml",
+      "TargetPath": "Views\\Aluga\\rent.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
@@ -2978,6 +2988,11 @@
     {
       "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Cliente\\Login.cshtml",
+      "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2996,8 +3011,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Login\\login.cshtml",
-      "TargetPath": "Views\\Login\\login.cshtml",
+      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Nav\\Galeria.cshtml",
+      "TargetPath": "Views\\Nav\\Galeria.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Nav\\Calendario.cshtml",
+      "TargetPath": "Views\\Nav\\Calendario.cshtml",
       "FileKind": "mvc"
     },
     {
