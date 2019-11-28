@@ -32,7 +32,12 @@ namespace McBonaldsMVC.Controllers {
                     DateTime.Parse (form["data-nascimento"]
                     ));
                     clienteRepository.Inserir(cliente);
-                return View ("Sucesso");
+                return View ("Sucesso", new RespostaViewModel()
+                {
+                    NomeView = "Cadastro",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
             } catch(Exception e) {
                 System.Console.WriteLine(e.StackTrace);
                 return View("Erro");

@@ -12077,23 +12077,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\36591349880\\.nuget\\packages\\": {},
+    "C:\\Users\\52965431810\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
+      "projectUniqueName": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
       "projectName": "McBonaldsMVC",
-      "projectPath": "C:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
-      "packagesPath": "C:\\Users\\36591349880\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\36591349880\\Desktop\\MVC\\McBonaldsMVC\\obj\\",
+      "projectPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
+      "packagesPath": "C:\\Users\\52965431810\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\McBonaldsMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\36591349880\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\52965431810\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

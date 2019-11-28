@@ -14,6 +14,8 @@ namespace McBonaldsMVC.Repositories {
         }
 
         public bool Inserir (Pedido pedido) {
+            var quantidadePedidos = File.ReadAllLines(PATH).Length;
+            pedido.Id = (ulong) ++quantidadePedidos; 
 
             var linha = new string[] { PrepararPedidoCVS (pedido) };
 
@@ -43,6 +45,7 @@ namespace McBonaldsMVC.Repositories {
 
             foreach (var linha in linhas) {
                 Pedido pedido = new Pedido ();
+                pedido.Id = ulong.Parse(ExtrairValorDoCampo("id",linha));
                 pedido.Hamburguer= new Hamburguer();
                 pedido.Shake = new Shake();
                 pedido.Cliente = new Cliente();
@@ -68,7 +71,7 @@ namespace McBonaldsMVC.Repositories {
             Hamburguer hamburguer = pedido.Hamburguer;
             Shake shake = pedido.Shake;
 
-            return $"cliente_nome={cliente.Nome};cliente_email={cliente.Email};cliente_endereco={cliente.Endereco};cliente_telefone={cliente.Telefone};hamburguer_preco={hamburguer.preco};hamburguer_nome={hamburguer.Nome};shake_nome={shake.Nome};shake_preco={shake.preco};data_pedido={pedido.DataDoPedido};preco_total={pedido.PrecoTotal}"; //substituição do bloco
+            return $"id={pedido.Id};status_pedido={pedido.Status};cliente_nome={cliente.Nome};cliente_email={cliente.Email};cliente_endereco={cliente.Endereco};cliente_telefone={cliente.Telefone};hamburguer_preco={hamburguer.preco};hamburguer_nome={hamburguer.Nome};shake_nome={shake.Nome};shake_preco={shake.preco};data_pedido={pedido.DataDoPedido};preco_total={pedido.PrecoTotal}"; //substituição do bloco
         }
     }
 }
