@@ -10,18 +10,20 @@ namespace McBonaldsMVC.Controllers
         PedidoRepository pedidoRepository = new PedidoRepository();
         public IActionResult Dashboard()
         {
+            var ninguemLogado = string.IsNullOrEmpty(ObterUsuarioTipoSession());
+
+            if(!ninguemLogado && (uint) TiposUsuario.ADMINISTRADOR == uint.Parse(ObterUsuarioTipoSession()))
+            {
+                
             var pedidos = pedidoRepository.ObterTodos();
             DashboardViewModel dashboardViewModel = new DashboardViewModel();
-
+            
             foreach (var pedido in pedidos)
             {
                 switch(pedido.Status)
                 {
                     case (uint) StatusPedido.APROVADO:
                         dashboardViewModel.PedidosAprovados++;
-                    break;
-                    case (uint) StatusPedido.PENDENTE:
-                        dashboardViewModel.PedidosPendentes++;
                     break;
                     case (uint) StatusPedido.REPROVADO:
                         dashboardViewModel.PedidosReprovados++;
@@ -34,7 +36,16 @@ namespace McBonaldsMVC.Controllers
             }
             dashboardViewModel.NomeView = "Dashboard";
             dashboardViewModel.UsuarioEmail = ObterUsuarioSession();
-            return View();
-        } 
+
+            return View(dashboardViewModel);
+            } else
+            {
+                return View("Erro", new RespostaViewModel()
+                {
+                    NomeView = "Dashboard",
+                    Mensagem = "Voce não tem permissão para entrar aqui"
+                });
+            }
+        }
     }
 }

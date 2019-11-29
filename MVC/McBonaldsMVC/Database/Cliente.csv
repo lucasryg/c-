@@ -1,2 +1,2 @@
-nome=lucas gonçalves;email=lucasryg@gmail.com;senha=123123;endereco=rua padaria noel;telefone=123213213;data_nascimento=31/03/1223 00:00:00
-nome=lucas2;email=lucas@gmail.com;senha=123123;endereco=rua padaria noeldd;telefone=321321321;data_nascimento=22/03/1233 00:00:00
+tipo_usuario=0;nome=administrador;email=admin@gmail.com;senha=321321;endereco=;telefone=;data_nascimento=
+tipo_usuario=1;nome=lucas;email=lucasryg@gmail.com;senha=123123;endereco=rua padaria noel;telefone=12321321312;data_nascimento=31/03/2003 00:00:00

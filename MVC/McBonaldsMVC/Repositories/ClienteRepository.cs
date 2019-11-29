@@ -18,10 +18,10 @@ namespace McBonaldsMVC.Repositories
 
         public bool Inserir(Cliente cliente)
         {
-            var linha = new string[] {PrepararRegistroCSV(cliente)};
+            var linha = new string[] { PrepararRegistroCSV(cliente) };
             File.AppendAllLines(PATH, linha);
 
-            return true;
+            return true;            
         }
 
         public Cliente ObterPor (string email)
@@ -31,22 +31,25 @@ namespace McBonaldsMVC.Repositories
             {
                 if(ExtrairValorDoCampo("email", item).Equals(email))
                 {
-                    Cliente cliente = new Cliente();
-                    cliente.Nome = ExtrairValorDoCampo("nome", item);
-                    cliente.Email = ExtrairValorDoCampo("email", item);
-                    cliente.dataNascimento = DateTime.Parse(ExtrairValorDoCampo("data_nascimento", item));
-                    cliente.Endereco = ExtrairValorDoCampo("endereco", item);
-                    cliente.Telefone = ExtrairValorDoCampo("telefone", item);
-                    cliente.Senha = ExtrairValorDoCampo("senha", item);
+                    Cliente c = new Cliente();
+                    c.Nome = ExtrairValorDoCampo("nome", item);
+                    c.Email = ExtrairValorDoCampo("email", item);
+                    c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", item));
+                    c.DataNascimento = 
+                    DateTime.Parse(ExtrairValorDoCampo("data_nascimento", item));
+                    c.Endereco = ExtrairValorDoCampo("endereco", item);
+                    c.Telefone = ExtrairValorDoCampo("telefone", item);
+                    c.Senha = ExtrairValorDoCampo("senha", item);
 
-                    return cliente;
+                    return c;
                 }
             }
             return null;
         }
+
         private string PrepararRegistroCSV(Cliente cliente)
         {
-            return $"nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereco={cliente.Endereco};telefone={cliente.Telefone};data_nascimento={cliente.dataNascimento}";
+            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereco={cliente.Endereco};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento}";
         }
     }
 }
