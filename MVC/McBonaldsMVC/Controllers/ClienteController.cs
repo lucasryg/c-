@@ -44,24 +44,22 @@ namespace McBonaldsMVC.Controllers
                 {
                     if(cliente.Senha.Equals(senha))
                     {
-                        switch (cliente.TipoUsuario)
-                        {
+                        switch(cliente.TipoUsuario){
                             case (uint) TiposUsuario.CLIENTE:
-                            HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
-                            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                            HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
-                        
-                            return RedirectToAction("Historico","Cliente");
-
-                            case (uint) TiposUsuario.ADMINISTRADOR:
-
-                            HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
-                            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                            HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
-                        
-                            return RedirectToAction("Historico","Cliente");
+                                HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
+                                HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                                HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
+                                
+                                return RedirectToAction("Historico","Cliente");
+                            
+                            default:
+                                HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
+                                HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                                HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
+                                
+                                return RedirectToAction("Dashboard","Administrador");
+                            
                         }
-
                     }
                     else 
                     {

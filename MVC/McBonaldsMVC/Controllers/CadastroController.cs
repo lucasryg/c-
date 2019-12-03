@@ -36,6 +36,7 @@ namespace McBonaldsMVC.Controllers
                     DateTime.Parse(form["data-nascimento"]));
 
                 cliente.TipoUsuario = (uint) TiposUsuario.CLIENTE;
+                
                 clienteRepository.Inserir(cliente);
                 
                 return View("Sucesso", new RespostaViewModel()

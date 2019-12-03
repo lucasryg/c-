@@ -80,10 +80,10 @@ namespace McBonaldsMVC.Repositories {
             var pedidoCSV = PrepararPedidoCSV(pedido);
             var linhaPedido = -1;
             var resultado = false;
-
+            
             for (int i = 0; i < pedidosTotais.Length; i++)
             {
-                var idConvertido = ulong.Parse(ExtrairValorDoCampo("id",pedidosTotais[i]));
+                var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", pedidosTotais[i]));
                 if(pedido.Id.Equals(idConvertido))
                 {
                     linhaPedido = i;
@@ -92,7 +92,7 @@ namespace McBonaldsMVC.Repositories {
                 }
             }
 
-            if (resultado)
+            if(resultado)
             {
                 pedidosTotais[linhaPedido] = pedidoCSV;
                 File.WriteAllLines(PATH, pedidosTotais);

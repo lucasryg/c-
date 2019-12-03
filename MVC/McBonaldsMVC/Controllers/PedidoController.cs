@@ -84,29 +84,29 @@ namespace McBonaldsMVC.Controllers {
                     NomeView = "Pedido",
                     UsuarioEmail = ObterUsuarioSession(),
                     UsuarioNome = ObterUsuarioNomeSession()
-                    
                 });
             }
         }
-    
+
         public IActionResult Aprovar(ulong id)
         {
             var pedido = pedidoRepository.ObterPor(id);
             pedido.Status = (uint) StatusPedido.APROVADO;
 
-            if (pedidoRepository.Atualizar(pedido))
+            if(pedidoRepository.Atualizar(pedido))
             {
-                return RedirectToAction("Dashboard" , "Administrador");
+                return RedirectToAction("Dashboard", "Administrador");
             }
             else
             {
-                return View("Erro", new RespostaViewModel("Não foi pessível aprovar este pedido")
+                return View("Erro", new RespostaViewModel("Não foi possível aprovar este pedido")
                 {
                     NomeView = "Dashboard",
                     UsuarioEmail = ObterUsuarioSession(),
-                    UsuarioNome = ObterUsuarioNomeSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
                 });
             }
+
         }
 
         public IActionResult Reprovar(ulong id)
@@ -114,19 +114,20 @@ namespace McBonaldsMVC.Controllers {
             var pedido = pedidoRepository.ObterPor(id);
             pedido.Status = (uint) StatusPedido.REPROVADO;
 
-            if (pedidoRepository.Atualizar(pedido))
+            if(pedidoRepository.Atualizar(pedido))
             {
-                return RedirectToAction("Dashboard" , "Administrador");
+                return RedirectToAction("Dashboard", "Administrador");
             }
             else
             {
-                return View("Erro", new RespostaViewModel("Não foi pessível aprovar este pedido")
+                return View("Erro", new RespostaViewModel("Não foi possível reprovar este pedido")
                 {
                     NomeView = "Dashboard",
                     UsuarioEmail = ObterUsuarioSession(),
-                    UsuarioNome = ObterUsuarioNomeSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
                 });
             }
+
         }
     }
 }

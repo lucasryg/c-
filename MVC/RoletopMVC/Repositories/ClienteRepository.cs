@@ -1,8 +1,9 @@
+using Microsoft.AspNetCore.Mvc;
+using RoleTopMVC.Models;
 using System;
 using System.IO;
-using McBonaldsMVC.Models;
 
-namespace McBonaldsMVC.Repositories
+namespace RoleTopMVC.Repositories
 {
     public class ClienteRepository : RepositoryBase
     {
@@ -32,15 +33,11 @@ namespace McBonaldsMVC.Repositories
                 if(ExtrairValorDoCampo("email", item).Equals(email))
                 {
                     Cliente c = new Cliente();
-                    c.Nome = ExtrairValorDoCampo("nome", item);
-                    c.TipoUsuario = uint.Parse(ExtrairValorDoCampo("tipo_usuario", item));
                     c.Email = ExtrairValorDoCampo("email", item);
-                    c.DataNascimento = 
-                    DateTime.Parse(ExtrairValorDoCampo("data_nascimento", item));
-                    c.Endereco = ExtrairValorDoCampo("endereco", item);
-                    c.Telefone = ExtrairValorDoCampo("telefone", item);
                     c.Senha = ExtrairValorDoCampo("senha", item);
-
+                    c.Cpf = ExtrairValorDoCampo("cpf", item);
+                    c.Telefone = ExtrairValorDoCampo("telefone", item);
+                    c.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data-nascimento", item));
                     return c;
                 }
             }
@@ -49,7 +46,7 @@ namespace McBonaldsMVC.Repositories
 
         private string PrepararRegistroCSV(Cliente cliente)
         {
-            return $"tipo_usuario={cliente.TipoUsuario};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereco={cliente.Endereco};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento}";
+            return $"nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};cpf={cliente.Cpf};telefone={cliente.Telefone};data-nascimento={cliente.DataNascimento};";      
         }
     }
 }
