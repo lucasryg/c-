@@ -2981,6 +2981,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Cliente\\Historico.cshtml",
+      "TargetPath": "Views\\Cliente\\Historico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\52965431810\\Documents\\Exercicios\\MVC\\RoleTopMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"

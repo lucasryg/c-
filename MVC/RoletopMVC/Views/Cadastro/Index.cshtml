@@ -6,23 +6,21 @@
         
         <div id="color" style="width: 550px;">
             <form method="POST" action='@Url.Action("CadastrarCliente","Cadastro")'>
-                <input  type="nome" name="nome"   placeholder="Nome">    
+                <input  type="text" name="nome"   placeholder="Nome">    
                 <br/>
                 <input  type="email" name="email"   placeholder="Email">
                 <br/>
                 
                 <input  type="password" name="senha"   placeholder="Senha" width="100px">
                 <br/>
-                <input  type="password" name="senha"   placeholder="Confirmar senha" width="100px">
+                <input  type="password" name="confsenhas"   placeholder="Confirmar senha" width="100px">
                 <br/>
                 <input  type="text" name="cpf"   placeholder="CPF">
                 <br/>
 
                 <input  type="text" name="telefone"   placeholder="Telefone">
                 <br/>
-                <p><strong> Data de nascimento : </strong></p>
-                
-                <label for="data-nascimento">Data de Nascimento</label>
+                <label for="data-nascimento" ></label>
                 <br />
                 <input id="data-nascimento" type="date" maxlength="20" minlength="3" name="data-nascimento" />
         

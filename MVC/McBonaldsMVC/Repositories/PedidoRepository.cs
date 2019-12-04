@@ -89,7 +89,7 @@ namespace McBonaldsMVC.Repositories {
                     linhaPedido = i;
                     resultado = true;
                     break;
-                }
+                }.
             }
 
             if(resultado)

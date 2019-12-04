@@ -49,20 +49,20 @@ namespace RoleTopMVC.Controllers
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
                                 
-                                return RedirectToAction("Home","Index");
+                                return RedirectToAction("Historico" , "Cliente");
                             
                             default:
-                            // HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
-                            // HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                            // HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
+                            HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
+                            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                            HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
                                 
-                            return RedirectToAction("Cliente","Login");
+                            return RedirectToAction("Dashboard","Administrador");
                             
                         }
                     }
                     else 
                     {
-                        return View("Erro", new RespostaViewModel("Senha incorreta"));
+                        return View("Erro");
                     }
 
                 } 
@@ -79,19 +79,28 @@ namespace RoleTopMVC.Controllers
             }
         }
 
-
-        public IActionResult Logoff()
+        public IActionResult Historico()
         {
-            HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
-            HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
-            HttpContext.Session.Clear();
-            return RedirectToAction("Home", "Index");
-        }
+        var emailCliente = HttpContext.Session.GetString (SESSION_CLIENTE_EMAIL);
+        return View(new BaseViewModel()
+        {
+            NomeView = "Historico",
+            UsuarioEmail = ObterUsuarioSession(),
+            UsuarioNome = ObterUsuarioNomeSession()
+        });
+
+        // public IActionResult Logoff()
+        // {
+        //     HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
+        //     HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
+        //     HttpContext.Session.Clear();
+        //     return RedirectToAction("Home", "Index");
+        // }
 
 
-        //! COLOCAR DIRECIONAMETO 
+        
     
 
-
+        }
     }
 }

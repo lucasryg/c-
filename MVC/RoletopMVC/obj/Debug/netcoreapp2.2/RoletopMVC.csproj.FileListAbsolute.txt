@@ -35,3 +35,5 @@ C:\Users\52965431810\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2
 C:\Users\52965431810\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Nav\Galeria.g.cshtml.cs
 C:\Users\52965431810\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Erro.g.cshtml.cs
 C:\Users\52965431810\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\52965431810\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Historico.g.cshtml.cs
+C:\Users\52965431810\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Administrador\Dashboard.g.cshtml.cs
