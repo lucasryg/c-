@@ -30,7 +30,8 @@ namespace RoleTopMVC.Controllers
             ViewData["Action"] = "Rent";
             try
             {
-                Aluga aluga = new Aluga(
+            //! Olhar model.aluga para fazer isso
+                Cliente aluga = new Cliente(
                     form["nome"],
                     form["email"],
                     form["cpf"],
