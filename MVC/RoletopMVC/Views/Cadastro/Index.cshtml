@@ -6,6 +6,8 @@
         
         <div id="color" style="width: 550px;">
             <form method="POST" action='@Url.Action("CadastrarCliente","Cadastro")'>
+
+                <p>Cadastro: </p>
                 <input  type="text" name="nome"   placeholder="Nome">    
                 <br/>
                 <input  type="email" name="email"   placeholder="Email">
@@ -20,8 +22,8 @@
 
                 <input  type="text" name="telefone"   placeholder="Telefone">
                 <br/>
-                <label for="data-nascimento" ></label>
-                <br />
+                
+                
                 <input id="data-nascimento" type="date" maxlength="20" minlength="3" name="data-nascimento" />
         
                 <br/>

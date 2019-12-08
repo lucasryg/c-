@@ -110,11 +110,13 @@ section{
 table th,td{
     color: white;;
 }
-
 footer{
     background-color: black;
     display: flex;
     justify-content: space-evenly;
     height: 20%;
+    position:absolute;
+    bottom:0;
+    width:100%;
 
 }

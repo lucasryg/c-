@@ -41,7 +41,9 @@ html{
                 INICIO NAV
 **********************************************/
 
-
+nav #bt-mobile-menu {
+    display: none;
+}
 
 nav{
     background-color:transparent;
@@ -142,6 +144,7 @@ nav li{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 @media(min-width:1100px){
     #bt-mobile-menu{
         display: none;  
@@ -231,3 +234,5 @@ footer{
     height: 20%;
 
 }
+
+

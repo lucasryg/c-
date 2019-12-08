@@ -170,8 +170,44 @@ footer{
     display: flex;
     justify-content: space-evenly;
     height: 20%;
+    position:absolute;
+    bottom:0;
+    width:100%;
+
 
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
 
+li{
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+a{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+#ftboleto {
+    height: 5em;
+}
+
+#ftcartao{
+    height: 5em;
+}
+
+@media (max-width: 800px) {
+    main {
+        width:70%;
+    }
+}
 
