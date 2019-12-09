@@ -35,7 +35,7 @@ namespace RoleTopMVC.Repositories
                     Aluga aluga = new Aluga();
                     aluga.Cliente.Nome = ExtrairValorDoCampo("Nome" , item);
                     aluga.Cliente.Email = ExtrairValorDoCampo("Email", item);
-                    aluga.Cliente.Cpf = ExtrairValorDoCampo("CpfCnpj", item);
+                    aluga.Cliente.Cpf = ExtrairValorDoCampo("Cp fCnpj", item);
                     aluga.Cliente.Telefone = ExtrairValorDoCampo("Telefone", item);
                     aluga.Cliente.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("dataEhora" , item));
                     

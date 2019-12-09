@@ -8,6 +8,17 @@ namespace RoletopMVC.Controllers
 {
     public class PagamentoController : AbstractController
     {
+        public IActionResult FormaPag()
+        {
+            return View(new BaseViewModel()
+            {
+                NomeView = "FormaPag",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });            
+        }
+        
+
         public IActionResult Pagar()
         {
             return View(new BaseViewModel()
@@ -18,13 +29,28 @@ namespace RoletopMVC.Controllers
             });            
         }
 
-        public IActionResult Pagar(IFormCollection form)
+        public IActionResult Cash(IFormCollection form)
         {
             //Vem do Model.Aluga
             // Pagamento repositoty aqui
-            
+
+            Aluga aluga = new Aluga(
+            form["tipoevento"],
+            form["PuvPriv"],
+            form["iluminacao"],
+            form["som"],
+            form["formaDePagamento"],
+            form["numero"],
+            form[""]
+
+            //! Colocar os dados do cartao no Model.Aluga 
+            );
+
 
             
+
+
+
         }
     }
 }

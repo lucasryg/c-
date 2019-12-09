@@ -10,7 +10,7 @@
                     
                     
                     
-                    <form method="POST" action='@Url.Action("Pagar","Pagamento")'>
+                    <form method="POST" action='@Url.Action("Cash","Pagamento")'>
 
                         <label for="tipoevento">Selecione seu tipo de evento</label>
                         <select name="tipoevento">
@@ -30,8 +30,8 @@
                         <input type="checkbox" name="som"> Som <br>
 
                         
-                        <label for="tipoevento">Forma de pagamento</label>
-                        <select name="formeDePagamento">
+                        <label for="formPagamento">Forma de pagamento</label>
+                        <select name="formaDePagamento">
                         <option value="debito">Débito</option>
                         <option value="credito">Crédito</option>
                         </select>
@@ -45,7 +45,7 @@
                                 
                             <input  type="alo" name="cvv" maxlength="3" minlength="3" placeholder="CVV">
                         </div>
-                 
+                        
                         <input type="submit" name="submit" value="Cadastrar">
                     </form>
                 </div>

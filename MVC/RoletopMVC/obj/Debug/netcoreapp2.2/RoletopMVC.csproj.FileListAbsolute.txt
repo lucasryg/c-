@@ -80,3 +80,5 @@ C:\Users\Lucas\Desktop\c#\c-\MVC\RoletopMVC\obj\Debug\netcoreapp2.2\RoletopMVC.V
 C:\Users\Lucas\Desktop\c#\c-\MVC\RoletopMVC\obj\Debug\netcoreapp2.2\RoletopMVC.csproj.CopyComplete
 C:\Users\Lucas\Desktop\c#\c-\MVC\RoletopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pagamento\FormaPag.cshtml.g.cs
 C:\Users\Lucas\Desktop\c#\c-\MVC\RoletopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pagamento\Pagar.cshtml.g.cs
+C:\Users\52965431810\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pagamento\FormaPag.g.cshtml.cs
+C:\Users\52965431810\Documents\Exercicios\MVC\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Pagamento\Pagar.g.cshtml.cs

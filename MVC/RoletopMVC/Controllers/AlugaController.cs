@@ -18,8 +18,8 @@ namespace RoleTopMVC.Controllers {
                     });
                 }
 
-                public IActionResult RegistrarAluguel (IFormCollection form) {
-                    try {
+                public IActionResult RegistrarAluguel(IFormCollection form) {
+                
                         //! Olhar model.aluga para fazer isso
                         // Para a primeira pagina, que apenas precisa dos dados do cliente
                         Aluga aluga = new Aluga();
@@ -36,21 +36,19 @@ namespace RoleTopMVC.Controllers {
                         aluga.Cliente = cliente;
 
                         
-                       alugaRepository.Inserir (aluga);
-
-                        return View ("Sucesso", new RespostaViewModel () {
+                        if (alugaRepository.Inserir (aluga))
+                        {
+                        return RedirectToAction("FormaPag" , "Pagamento");
+                        }
+                        else
+                        {
+                        return View ("Erro", new RespostaViewModel("Não foi possivel cadastrar, tente novamente")
+                        {
                             NomeView = "Rent",
-                                UsuarioEmail = ObterUsuarioSession (),
-                                UsuarioNome = ObterUsuarioNomeSession ()
+                            UsuarioEmail = ObterUsuarioSession(),
+                            UsuarioNome = ObterUsuarioNomeSession()
                         });
-                    } catch (Exception e) {
-                        System.Console.WriteLine (e.StackTrace);
-                        return View ("Erro", new RespostaViewModel () {
-                            NomeView = "Cadastro",
-                                UsuarioEmail = ObterUsuarioSession (),
-                                UsuarioNome = ObterUsuarioNomeSession ()
-                        });
+                    }
                     }
                 }
         }
-}

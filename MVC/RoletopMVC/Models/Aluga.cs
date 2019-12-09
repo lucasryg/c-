@@ -6,26 +6,37 @@ namespace RoleTopMVC.Models
     {
         public Cliente Cliente {get;set;}
         public string TipoEvento {get;set;}
-        public bool Publico {get;set;}
-        public bool Iluminacao {get;set;}
-        public bool Som {get;set;}
+        public string Publico {get;set;}
+        public string Iluminacao {get;set;}
+        public string Som {get;set;}
         public string FormaPagamento {get;set;}
-        public double ValorTotal{get;set;}
-        public bool Pago {get;set;}
+        public string NumeroCartao {get;set;}
+        public string NomeCartao {get;set;}
+        public string venc
         public uint Status {get;set;}
-        public Aluga(Cliente cliente, string tipoEvento, bool publico, bool iluminacao, bool som, string formaPagamento, double valorTotal, bool pago, uint status)
+        public Aluga(Cliente cliente, string tipoEvento, string publico, string iluminacao, string som, string formaPagamento, uint status)
         {
             this.Cliente = new Cliente();
             this.TipoEvento = tipoEvento;
-            this.Publico = false;
-            this.Iluminacao = false;
-            this.Som = false;
+            this.Publico = publico;
+            this.Iluminacao = iluminacao;
+            this.Som = som;
             this.FormaPagamento = formaPagamento;
-            this.ValorTotal = 0;
-            this.Pago = false;
             this.Status = status;
 
         }
+
+        public Aluga(string tipoEvento, string publico, string iluminacao, string som, string formaPagamento, uint status)
+        {
+            this.TipoEvento = tipoEvento;
+            this.Publico = publico;
+            this.Iluminacao = iluminacao;
+            this.Som = som;
+            this.FormaPagamento = formaPagamento;
+            this.Status = status;
+        }
+
+
 
         public Aluga()
         {
