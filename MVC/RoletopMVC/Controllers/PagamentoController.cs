@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RoleTopMVC.Controllers;
+using RoleTopMVC.Models;
 using RoleTopMVC.ViewModels;
 
 namespace RoletopMVC.Controllers
@@ -13,7 +15,14 @@ namespace RoletopMVC.Controllers
                 NomeView = "Pagar",
                 UsuarioEmail = ObterUsuarioSession(),
                 UsuarioNome = ObterUsuarioNomeSession()
-            });
+            });            
+        }
+
+        public IActionResult Pagar(IFormCollection form)
+        {
+            //Vem do Model.Aluga
+            // Pagamento repositoty aqui
+            
 
             
         }

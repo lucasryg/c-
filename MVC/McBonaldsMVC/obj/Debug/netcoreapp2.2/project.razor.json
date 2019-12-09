@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
+  "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\McBonaldsMVC.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,83 +2961,83 @@
   "RootNamespace": "McBonaldsMVC",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\Erro.cshtml",
-      "TargetPath": "Views\\Shared\\Erro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
-      "TargetPath": "Views\\Shared\\_HeaderHomePage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Pedido\\Index.cshtml",
-      "TargetPath": "Views\\Pedido\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Administrador\\Dashboard.cshtml",
-      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\Sucesso.cshtml",
-      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Cliente\\Historico.cshtml",
-      "TargetPath": "Views\\Cliente\\Historico.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Cliente\\Login.cshtml",
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Cliente\\Login.cshtml",
       "TargetPath": "Views\\Cliente\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Cadastro\\Index.cshtml",
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\_HeaderHomePage.cshtml",
+      "TargetPath": "Views\\Shared\\_HeaderHomePage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Cliente\\Historico.cshtml",
+      "TargetPath": "Views\\Cliente\\Historico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Cadastro\\Index.cshtml",
       "TargetPath": "Views\\Cadastro\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lucas\\Desktop\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Administrador\\Dashboard.cshtml",
+      "TargetPath": "Views\\Administrador\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\Sucesso.cshtml",
+      "TargetPath": "Views\\Shared\\Sucesso.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Pedido\\Index.cshtml",
+      "TargetPath": "Views\\Pedido\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\Erro.cshtml",
+      "TargetPath": "Views\\Shared\\Erro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lucas\\Desktop\\SENAI\\c#\\c-\\MVC\\McBonaldsMVC\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],

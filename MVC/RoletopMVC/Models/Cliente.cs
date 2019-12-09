@@ -28,5 +28,14 @@ namespace RoleTopMVC.Models
         this.Telefone = telefone;
         this.DataNascimento = dataNascimento;
     }
+
+    public Cliente(string nome,string email, string cpf, string telefone, DateTime dataNascimento)
+    {
+        this.Nome = nome;
+        this.Email = email;
+        this.Cpf = cpf;
+        this.Telefone = telefone;
+        this.DataNascimento = dataNascimento;
+    }
     }
 }
