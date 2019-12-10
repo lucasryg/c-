@@ -1,3 +1,4 @@
+@model RoleTopMVC.ViewModels.AlugaViewModel
 <link href="~/css/cadasterstyle.css" rel="stylesheet" type="text/css">
 <main>
         <div id="closenav">     
@@ -12,14 +13,14 @@
                     
                     <form method="POST" action='@Url.Action("Cash","Pagamento")'>
 
-                        <label for="tipoevento">Selecione seu tipo de evento</label>
-                        <select name="tipoevento">
-                        @foreach(var tipoevento in Model.TiposdeEventos){
-                        <option value="@tipoevento">@tipoevento</option>
+                        <label for="tipoEvento">Selecione seu tipo de evento</label>
+                        <select name="tipoEvento">
+                        @foreach(var tiposEventos in Model.TipoEvento){
+                        <option value="@tiposEventos">@tiposEventos</option>
                         }
                         </select>
 
-                        <label for="tipoevento">Seu evento vai ser</label>
+                        <label>Seu evento vai ser</label>
                         <select name="PubPriv">
                         <option value="publico">Público</option>
                         <option value="privado">Privado</option>
@@ -30,7 +31,7 @@
                         <input type="checkbox" name="som"> Som <br>
 
                         
-                        <label for="formPagamento">Forma de pagamento</label>
+                        <label>Forma de pagamento</label>
                         <select name="formaDePagamento">
                         <option value="debito">Débito</option>
                         <option value="credito">Crédito</option>

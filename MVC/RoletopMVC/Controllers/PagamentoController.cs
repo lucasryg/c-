@@ -1,20 +1,27 @@
+using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoletopMVC.Repositories;
 using RoleTopMVC.Controllers;
 using RoleTopMVC.Models;
+using RoleTopMVC.Repositories;
 using RoleTopMVC.ViewModels;
 
 namespace RoletopMVC.Controllers
 {
     public class PagamentoController : AbstractController
     {
+
+        PagamentoRepository pagamentoRepository = new PagamentoRepository();
+
+        TiposDeEventoRepository tiposDeEvenetoRepository = new TiposDeEventoRepository();
+
+
         public IActionResult FormaPag()
         {
-            return View(new BaseViewModel()
+            return View(new AlugaViewModel()
             {
-                NomeView = "FormaPag",
-                UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
+                TipoEvento = tiposDeEvenetoRepository.ObterTodos()
             });            
         }
         
@@ -35,16 +42,36 @@ namespace RoletopMVC.Controllers
             // Pagamento repositoty aqui
 
             Aluga aluga = new Aluga(
-            form["tipoevento"],
-            form["PuvPriv"],
+            form["tipoEvento"],
+            form["PubPriv"],
             form["iluminacao"],
             form["som"],
             form["formaDePagamento"],
             form["numero"],
-            form[""]
-
+            form["nome"],
+            DateTime.Parse(form["vencimento"]),
+            form["CVV"]
             //! Colocar os dados do cartao no Model.Aluga 
             );
+
+            if (pagamentoRepository.Inserir(aluga))
+            {
+                return View ("Sucesso", new RespostaViewModel("Seu pedido foi realizado com sucesso")
+                        {
+                            NomeView = "Pagar",
+                            UsuarioEmail = ObterUsuarioSession(),
+                            UsuarioNome = ObterUsuarioNomeSession()
+                        });
+            }
+            else{
+                return View ("Erro", new RespostaViewModel("Não foi possivel cadastrar, tente novamente")
+                        {
+                            NomeView = "Pagar",
+                            UsuarioEmail = ObterUsuarioSession(),
+                            UsuarioNome = ObterUsuarioNomeSession()
+                        });
+            }
+            //Agora, pedidoRepository (necessario {inserir})
 
 
             

@@ -1,4 +1,5 @@
 using System;
+using RoleTopMVC.Enum;
 
 namespace RoleTopMVC.Models
 {
@@ -12,28 +13,27 @@ namespace RoleTopMVC.Models
         public string FormaPagamento {get;set;}
         public string NumeroCartao {get;set;}
         public string NomeCartao {get;set;}
-        public string venc
+        public DateTime DataVencimento {get;set;}
+        public string CVV {get;set;} 
         public uint Status {get;set;}
-        public Aluga(Cliente cliente, string tipoEvento, string publico, string iluminacao, string som, string formaPagamento, uint status)
+
+        public Aluga(Cliente cliente)
         {
             this.Cliente = new Cliente();
-            this.TipoEvento = tipoEvento;
-            this.Publico = publico;
-            this.Iluminacao = iluminacao;
-            this.Som = som;
-            this.FormaPagamento = formaPagamento;
-            this.Status = status;
-
         }
 
-        public Aluga(string tipoEvento, string publico, string iluminacao, string som, string formaPagamento, uint status)
+        public Aluga(string tipoEvento, string publico, string iluminacao, string som, string formaPagamento, string numeroCartao, string nomeCartao, DateTime dataVencimento, string cvv)
         {
             this.TipoEvento = tipoEvento;
             this.Publico = publico;
             this.Iluminacao = iluminacao;
             this.Som = som;
             this.FormaPagamento = formaPagamento;
-            this.Status = status;
+            this.NumeroCartao = numeroCartao;
+            this.NomeCartao = nomeCartao;
+            this.DataVencimento = dataVencimento;
+            this.CVV = cvv;
+            this.Status = (uint) StatusAluga.PENDENTE;
         }
 
 

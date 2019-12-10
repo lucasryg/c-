@@ -21,6 +21,10 @@ namespace McBonaldsMVC.Repositories {
             return true;
         }
 
+
+        //Talves usar isso
+
+        
         public List<Pedido> ObterTodosPorCliente(string emailCliente)
         {
             var pedidos = ObterTodos();

@@ -35,7 +35,7 @@ namespace RoleTopMVC.Repositories
                     Aluga aluga = new Aluga();
                     aluga.Cliente.Nome = ExtrairValorDoCampo("Nome" , item);
                     aluga.Cliente.Email = ExtrairValorDoCampo("Email", item);
-                    aluga.Cliente.Cpf = ExtrairValorDoCampo("Cp fCnpj", item);
+                    aluga.Cliente.Cpf = ExtrairValorDoCampo("CpfCnpj", item);
                     aluga.Cliente.Telefone = ExtrairValorDoCampo("Telefone", item);
                     aluga.Cliente.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("dataEhora" , item));
                     
@@ -48,6 +48,16 @@ namespace RoleTopMVC.Repositories
         private string PrepararRegistroCSV(Aluga aluga)
         {
             return $"nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};CpfCnpj={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};dataEhora={aluga.Cliente.DataNascimento};";      
+        }
+
+        public List<Aluga> ObterTodosPor (string emailCliente) {
+            List<Aluga> alugas = new List<Aluga> ();
+            foreach (var aluga in ObterTodos ()) {
+                if (aluga.Cliente.Email.Equals (emailCliente)) {
+                    alugas.Add (aluga);
+                }
+            }
+            return alugas;
         }
     }
 }
