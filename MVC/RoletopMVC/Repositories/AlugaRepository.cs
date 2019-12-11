@@ -47,7 +47,7 @@ namespace RoleTopMVC.Repositories
         //! Refazer tudo do PedidoRepository
         private string PrepararRegistroCSV(Aluga aluga)
         {
-            return $"id={aluga.Id};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};CpfCnpj={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};dataEhora={aluga.Cliente.DataNascimento};";      
+            return $"id={aluga.Id};Nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};CpfCnpj={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};dataEhora={aluga.Cliente.DataNascimento};";      
         }
 
         public Aluga ObterPor(ulong id)

@@ -31,7 +31,6 @@ namespace RoleTopMVC.Controllers
         [HttpPost]
         public IActionResult Login(IFormCollection form)
         {
-            ViewData["Action"] = "Login";
             try
             {
                 System.Console.WriteLine("==================");
@@ -48,7 +47,7 @@ namespace RoleTopMVC.Controllers
                 {
                     if(cliente.Senha.Equals(senha))
                     {
-                    switch(cliente. TipoUsuario){
+                        switch(cliente.TipoUsuario){
                             case (uint) TiposUsuario.CLIENTE:
                                 HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
@@ -67,7 +66,7 @@ namespace RoleTopMVC.Controllers
                     }
                     else 
                     {
-                        return View("Erro");
+                        return View("Erro", new RespostaViewModel("Senha incorreta"));
                     }
 
                 } 
@@ -104,7 +103,7 @@ namespace RoleTopMVC.Controllers
             HttpContext.Session.Remove(SESSION_CLIENTE_EMAIL);
             HttpContext.Session.Remove(SESSION_CLIENTE_NOME);
             HttpContext.Session.Clear();
-            return RedirectToAction("Home", "Index");
+            return RedirectToAction("Index", "Home");
         }
 
 

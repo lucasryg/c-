@@ -1,17 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
+using RoleTopMVC.ViewModels;
 
 namespace RoleTopMVC.Controllers
 {
-    public class NavController : Controller
+    public class NavController : AbstractController
     {
         public IActionResult Calendario()
         {
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Calendario",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
 
         public IActionResult Galeria()
         {
-            return View();
+            return View(new BaseViewModel()
+            {
+                NomeView = "Galeria",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
         }
     }
 }

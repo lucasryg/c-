@@ -27,7 +27,6 @@ namespace McBonaldsMVC.Controllers
         [HttpPost]
         public IActionResult Login(IFormCollection form)
         {
-            ViewData["Action"] = "Login";
             try
             {
                 System.Console.WriteLine("==================");

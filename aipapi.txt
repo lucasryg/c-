@@ -21,3 +21,15 @@ Nela voce precisa chamar um Atributo(normalmente uma lista) para que voce possa 
 
 3 - E depois no seu AlugaController acho, voce vai passar os valores por onde passa o view
 
+---------------------------------------------------------------------------
+
+Criar um repositorio novo que junta e guarda os valores dos dois CSV - Para fazer o dashboard 
+
+Botar a pagina de alugar na pagina do historico(talves)
+
+arrumar o DashBoard
+
+
+
+
+

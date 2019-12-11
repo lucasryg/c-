@@ -1,6 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoleTopMVC.Enum;
 using RoleTopMVC.Models;
 using RoleTopMVC.Repositories;
 using RoleTopMVC.ViewModels;
@@ -33,6 +34,8 @@ namespace RoleTopMVC.Controllers
                 form["cpf"],
                 form["telefone"],
                 DateTime.Parse(form["data-nascimento"]));
+
+                cliente.TipoUsuario = (uint) TiposUsuario.CLIENTE;
 
                 clienteRepository.Inserir(cliente);
 
