@@ -41,7 +41,7 @@ namespace RoletopMVC.Repositories
                     aluga.FormaPagamento = ExtrairValorDoCampo("formaDePagamento" , item);
                     aluga.NumeroCartao = ExtrairValorDoCampo("numero" , item);
                     aluga.NomeCartao = ExtrairValorDoCampo("nome" , item);
-                    aluga.DataVencimento = DateTime.Parse(ExtrairValorDoCampo("vencimento" , item));
+                aluga.DataVencimento = ExtrairValorDoCampo("vencimento" , item);
                     aluga.CVV = ExtrairValorDoCampo("CVV" , item);
 
                     alugas.Add(aluga);

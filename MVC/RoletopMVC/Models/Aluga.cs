@@ -5,6 +5,7 @@ namespace RoleTopMVC.Models
 {
     public class Aluga
     {
+        public ulong Id {get;set;}
         public Cliente Cliente {get;set;}
         public string TipoEvento {get;set;}
         public string Publico {get;set;}
@@ -13,7 +14,7 @@ namespace RoleTopMVC.Models
         public string FormaPagamento {get;set;}
         public string NumeroCartao {get;set;}
         public string NomeCartao {get;set;}
-        public DateTime DataVencimento {get;set;}
+        public string DataVencimento {get;set;}
         public string CVV {get;set;} 
         public uint Status {get;set;}
 
@@ -22,7 +23,7 @@ namespace RoleTopMVC.Models
             this.Cliente = new Cliente();
         }
 
-        public Aluga(string tipoEvento, string publico, string iluminacao, string som, string formaPagamento, string numeroCartao, string nomeCartao, DateTime dataVencimento, string cvv)
+        public Aluga(string tipoEvento, string publico, string iluminacao, string som, string formaPagamento, string numeroCartao, string nomeCartao, string dataVencimento, string cvv)
         {
             this.TipoEvento = tipoEvento;
             this.Publico = publico;
@@ -34,6 +35,7 @@ namespace RoleTopMVC.Models
             this.DataVencimento = dataVencimento;
             this.CVV = cvv;
             this.Status = (uint) StatusAluga.PENDENTE;
+            this.Id = 0;
         }
 
 

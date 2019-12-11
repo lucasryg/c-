@@ -1,0 +1,23 @@
+Coisas para eu fazer 
+:
+
+tela logoff
+
+tela de pagamento ficar funcional QUAASEEEEEEEEE
+
+Dashboard 
+
+Historico 
+
+--------------------------------------------------------------------------
+
+Passo a passo :
+
+1- Criar um viewModel para a tela que voce precisa(historico/Dashboard/Pegar aqls valores)
+
+Nela voce precisa chamar um Atributo(normalmente uma lista) para que voce possa pegar os valores que existe nela, e passar para a View; Como o proprio nome diz, VIEWMODEL.
+
+2- Criar todos os metodos que vai pedir( so ir seguindo o mcBonalds como base que ta suave)
+
+3 - E depois no seu AlugaController acho, voce vai passar os valores por onde passa o view
+

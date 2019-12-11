@@ -1,55 +1,64 @@
 @model RoleTopMVC.ViewModels.AlugaViewModel
 <link href="~/css/cadasterstyle.css" rel="stylesheet" type="text/css">
-<main>
-        <div id="closenav">     
-            <a asp-controller="Home" asp-action="Index"><img src="../img/back white.png" alt="Fechar" title="fechar janela" style="width: 40px;padding-top: 10px;padding-right: 10px;"></a>
-        </div>
-        <section class="paga">
-            <img id="bandeiras" src="../img/BANDEIRAS PAGAMENTO.png">
-            
-            <div id="color" style="width: 550px;">
-                    
-                    
-                    
-                    <form method="POST" action='@Url.Action("Cash","Pagamento")'>
+ <main>
+            <h1>Pagamento</h1>
+    <div id="closenav">     
+        <a asp-controller="Home" asp-action="Index"><img src="../img/back white.png" alt="Fechar" title="fechar janela" style="width: 40px;padding-top: 10px;padding-right: 10px;"></a>
+    </div>
+    <section class="paga">
+        <img id="bandeiras" src="../img/BANDEIRAS PAGAMENTO.png">
+        
+        <div id="color" style="width: 550px;">
+                
+                
+                <form method="POST" action='@Url.Action("Registrar","Pagamento")'>
 
-                        <label for="tipoEvento">Selecione seu tipo de evento</label>
-                        <select name="tipoEvento">
-                        @foreach(var tiposEventos in Model.TipoEvento){
-                        <option value="@tiposEventos">@tiposEventos</option>
+                    <label for="tipoEvento">Selecione seu tipo de evento</label><br>
+                    <select name="tipoEvento">
+                    @foreach(var tiposEventos in Model.TipoDeEvento){
+                    <option value="@tiposEventos">@tiposEventos</option>
+                    }
+                    </select>
+                    <br>
+
+                    <label>Seu evento vai ser: </label><br>
+                    <select name="PubPriv">
+                    @foreach(var pubPriv in Model.PublicoPrivado){
+                    <option value="@pubPriv">@pubPriv</option>
+                    }
+                    </select>
+                    </select>
+                    <br>
+
+                    
+                    <label>Forma de pagamento</label><br>
+                    <select name="formaDePagamento">
+                        @foreach(var DebCre in Model.DebitoCredito){
+                            <option value="@DebCre">@DebCre</option>
                         }
-                        </select>
-
-                        <label>Seu evento vai ser</label>
-                        <select name="PubPriv">
-                        <option value="publico">Público</option>
-                        <option value="privado">Privado</option>
-                        </select>
+                    </select>
+                    <br>
+                    <div id="loucura">
                         
-                        <input type="checkbox" name="iluminacao"> iluminação <br>
-
-                        <input type="checkbox" name="som"> Som <br>
-
+                        <input type="checkbox" name="iluminacao"><p>Iluminação</p> <br>
                         
-                        <label>Forma de pagamento</label>
-                        <select name="formaDePagamento">
-                        <option value="debito">Débito</option>
-                        <option value="credito">Crédito</option>
-                        </select>
-
-                        <input  type="text" name="numero"  placeholder="Digite o número do seu cartão">    
-                
-                        <input  type="text" name="nome"   placeholder="Digite o nome impresso no seu cartão">
-
-                        <div id="fodas">
-                            <input type="alo" maxlength="5" minlength="4" placeholder="Data de vencimento" name="vencimento" />
-                                
-                            <input  type="alo" name="cvv" maxlength="3" minlength="3" placeholder="CVV">
-                        </div>
+                        <input type="checkbox" name="som"><p>Som</p><br>
                         
-                        <input type="submit" name="submit" value="Cadastrar">
-                    </form>
-                </div>
-                
-            </section>
-    </main>
+                    </div>
+
+                    <input  type="text" name="numero"  placeholder="Digite o número do seu cartão">    
+            
+                    <input  type="text" name="nome"   placeholder="Digite o nome impresso no seu cartão">
+
+                    <div id="fodas">
+                        <input type="alo" maxlength="5" minlength="4" placeholder="Data de vencimento xx/xx" name="vencimento" />
+                            
+                        <input  type="alo" name="cvv" maxlength="3" minlength="3" placeholder="CVV">
+                    </div>
+                    
+                    <input type="submit" name="submit" value="Cadastrar">
+                </form>
+            </div>
+            
+        </section>
+</main>

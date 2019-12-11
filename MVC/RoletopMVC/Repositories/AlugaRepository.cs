@@ -47,10 +47,50 @@ namespace RoleTopMVC.Repositories
         //! Refazer tudo do PedidoRepository
         private string PrepararRegistroCSV(Aluga aluga)
         {
-            return $"nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};CpfCnpj={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};dataEhora={aluga.Cliente.DataNascimento};";      
+            return $"id={aluga.Id};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};CpfCnpj={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};dataEhora={aluga.Cliente.DataNascimento};";      
         }
 
-        public List<Aluga> ObterTodosPor (string emailCliente) {
+        public Aluga ObterPor(ulong id)
+        {
+            var alugueisTotais = ObterTodos();
+            foreach (var item in alugueisTotais)
+            {
+                if (id.Equals(item.Id))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public bool Atualizar(Aluga aluga)
+        {
+            var alugueisTotais = File.ReadAllLines(PATH);
+            var alugaCSV = PrepararRegistroCSV(aluga);
+            var linhaPedido = -1;
+            var resultado = false;
+            
+            for (int i = 0; i < alugueisTotais.Length; i++)
+            {
+                var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", alugueisTotais[i]));
+                if(aluga.Id.Equals(idConvertido))
+                {
+                    linhaPedido = i;
+                    resultado = true;
+                    break;
+                }
+            }
+
+            if(resultado)
+            {
+                alugueisTotais[linhaPedido] = alugaCSV;
+                File.WriteAllLines(PATH, alugueisTotais);
+            }
+
+            return resultado;
+        }
+
+        public List<Aluga> ObterTodosPorCliente (string emailCliente) {
             List<Aluga> alugas = new List<Aluga> ();
             foreach (var aluga in ObterTodos ()) {
                 if (aluga.Cliente.Email.Equals (emailCliente)) {
@@ -59,5 +99,7 @@ namespace RoleTopMVC.Repositories
             }
             return alugas;
         }
+
+
     }
 }

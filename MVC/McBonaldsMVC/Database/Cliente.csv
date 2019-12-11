@@ -1,3 +1,4 @@
 tipo_usuario=0;nome=Administrador;email=admin@email.com;senha=123123;endereco=;telefone=;data_nascimento=01/01/0001 00:00:00
 tipo_usuario=1;nome=Fulano;email=fulano@email.com;senha=123123;endereco=BlaBla;telefone=11 99999-9999;data_nascimento=14/11/2019 00:00:00
 tipo_usuario=1;nome=Biro Biro;email=biro@email.com;senha=123123;endereco=BlaBla;telefone=11 99999-9999;data_nascimento=06/11/2019 00:00:00
+tipo_usuario=1;nome=lucas caravalho;email=lucas@gmail.com;senha=123123;endereco=paranagua;telefone=40028922;data_nascimento=23/02/2323 00:00:00

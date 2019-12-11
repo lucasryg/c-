@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoletopMVC.ViewModels;
 using RoleTopMVC.Enum;
 using RoleTopMVC.Models;
 using RoleTopMVC.Repositories;
@@ -85,16 +86,16 @@ namespace RoleTopMVC.Controllers
 
         public IActionResult Historico()
         {
-        List<Aluga> aluga = new List<Aluga>();
-        if(!string.IsNullOrEmpty(ObterUsuarioSession()))
-        {
-            aluga = alugaRepository.ObterTodosPor(ObterUsuarioSession());
-        }
-        return View(new AlugaViewModel()
-        {
-            UsuarioNome = ObterUsuarioNomeSession(),
-            Aluga = aluga
-        });
+            var emailCliente = ObterUsuarioSession();
+            var alugaCliente = alugaRepository.ObterTodosPorCliente(emailCliente);
+            
+            return View(new HistoricoViewModel()
+            {
+                Aluga = alugaCliente,
+                NomeView = "Historico",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });
 
         }
         

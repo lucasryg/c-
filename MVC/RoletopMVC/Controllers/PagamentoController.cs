@@ -6,6 +6,7 @@ using RoleTopMVC.Controllers;
 using RoleTopMVC.Models;
 using RoleTopMVC.Repositories;
 using RoleTopMVC.ViewModels;
+using RoleTopMVC.Enum;
 
 namespace RoletopMVC.Controllers
 {
@@ -14,29 +15,58 @@ namespace RoletopMVC.Controllers
 
         PagamentoRepository pagamentoRepository = new PagamentoRepository();
 
-        TiposDeEventoRepository tiposDeEvenetoRepository = new TiposDeEventoRepository();
+        TiposDeEventoRepository tiposDeEventoRepository = new TiposDeEventoRepository();
 
+        AlugaRepository alugaRepository = new AlugaRepository();
 
+        ClienteRepository clienteRepository = new ClienteRepository();
+        
+        PubPrivRepository pubPrivRepository = new PubPrivRepository();
+        
+        DebCreRepository debCreRepository = new DebCreRepository();
+        
+ 
         public IActionResult FormaPag()
         {
-            return View(new AlugaViewModel()
+            return View(new BaseViewModel()
             {
-                TipoEvento = tiposDeEvenetoRepository.ObterTodos()
-            });            
+                NomeView = "FormaPag",
+                UsuarioEmail = ObterUsuarioSession(),
+                UsuarioNome = ObterUsuarioNomeSession()
+            });           
         }
         
 
         public IActionResult Pagar()
         {
-            return View(new BaseViewModel()
+            AlugaViewModel avm= new AlugaViewModel();
+
+            avm.TipoDeEvento = tiposDeEventoRepository.ObterTodos();
+            avm.PublicoPrivado = pubPrivRepository.ObterTodos();
+            avm.DebitoCredito = debCreRepository.ObterTodos();
+
+            var usuarioLogado = ObterUsuarioSession();
+            var nomeUsuarioLogado = ObterUsuarioNomeSession();
+            if (!string.IsNullOrEmpty(nomeUsuarioLogado))
             {
-                NomeView = "Pagar",
-                UsuarioEmail = ObterUsuarioSession(),
-                UsuarioNome = ObterUsuarioNomeSession()
-            });            
+                avm.NomeUsuario = nomeUsuarioLogado;
+            }
+
+            var clienteLogado = clienteRepository.ObterPor(usuarioLogado);
+            if (clienteLogado != null)
+            {
+                avm.cliente = clienteLogado;
+            }
+
+            avm.NomeView="Pagamento";
+            avm.UsuarioEmail = usuarioLogado;
+            avm.UsuarioNome = nomeUsuarioLogado;
+
+            return View(avm);
+
         }
 
-        public IActionResult Cash(IFormCollection form)
+        public IActionResult Registrar(IFormCollection form)
         {
             //Vem do Model.Aluga
             // Pagamento repositoty aqui
@@ -49,7 +79,7 @@ namespace RoletopMVC.Controllers
             form["formaDePagamento"],
             form["numero"],
             form["nome"],
-            DateTime.Parse(form["vencimento"]),
+            form["vencimento"],
             form["CVV"]
             //! Colocar os dados do cartao no Model.Aluga 
             );
@@ -73,10 +103,26 @@ namespace RoletopMVC.Controllers
             }
             //Agora, pedidoRepository (necessario {inserir})
 
+        }
 
-            
+        public IActionResult Reprovar(ulong id)
+        {
+            var aluga = alugaRepository.ObterPor(id);
+            aluga.Status = (uint) StatusAluga.REPROVADO;
 
-
+            if(alugaRepository.Atualizar(aluga))
+            {
+                return RedirectToAction("Dashboard", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel("Não foi possível reprovar este pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
 
         }
     }

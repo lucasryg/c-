@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace RoleTopMVC.Repositories
+namespace RoletopMVC.Repositories
 {
-    public class TiposDeEventoRepository
+    public class PubPrivRepository
     {
-        public const string PATH = "Database/TiposDeEvento.csv";
+        public const string PATH = "Database/PublicoPrivado.csv";
 
-        public TiposDeEventoRepository (){
+        public PubPrivRepository (){
             if (!File.Exists (PATH)) {
                 File.Create (PATH).Close();
             }
