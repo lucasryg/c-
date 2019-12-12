@@ -29,6 +29,14 @@ Botar a pagina de alugar na pagina do historico(talves)
 
 arrumar o DashBoard
 
+==============================================================================================
+Estava tentando resolver o erro, mas sem ideias.
+
+talvez ele esteja guardando dois valores num atributo só
+
+Pedir ajuda para o sor 
+
+
 
 
 

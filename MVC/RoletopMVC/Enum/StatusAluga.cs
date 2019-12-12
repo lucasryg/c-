@@ -1,6 +1,6 @@
 namespace RoleTopMVC.Enum
 {
-    public enum StatusAluga
+    public enum StatusAluga : uint
     {
         PENDENTE = 0,
         APROVADO = 1,

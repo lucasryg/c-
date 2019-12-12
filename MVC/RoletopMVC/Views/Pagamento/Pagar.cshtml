@@ -1,5 +1,5 @@
 @model RoleTopMVC.ViewModels.AlugaViewModel
-<link href="~/css/cadasterstyle.css" rel="stylesheet" type="text/css">
+<link href="~/css/admstyle.css" rel="stylesheet" type="text/css">
  <main>
             <h1>Pagamento</h1>
     <div id="closenav">     
@@ -12,6 +12,24 @@
                 
                 
                 <form method="POST" action='@Url.Action("Registrar","Pagamento")'>
+
+                <input  type="text" value="@Model.cliente.Nome" name="nome"   placeholder="Nome">    
+
+                <br/>
+
+                <input  type="email" value="@Model.cliente.Email" name="email"   placeholder="Email">
+
+                <br/>
+
+                <input  type="text" value="@Model.cliente.Cpf" name="cpf"   placeholder="CPF">
+
+                <br/>
+
+                <input  type="text" value="@Model.cliente.Telefone" name="telefone"   placeholder="Telefone">
+
+                <br/>
+
+                <input id="data-nascimento"  value="@Model.cliente.DataNascimento" type="date" maxlength="20" minlength="3" name="data-nascimento" />
 
                     <label for="tipoEvento">Selecione seu tipo de evento</label><br>
                     <select name="tipoEvento">
@@ -48,7 +66,7 @@
 
                     <input  type="text" name="numero"  placeholder="Digite o número do seu cartão">    
             
-                    <input  type="text" name="nome"   placeholder="Digite o nome impresso no seu cartão">
+                    <input  type="text" name="nomeCartao"   placeholder="Digite o nome impresso no seu cartão">
 
                     <div id="fodas">
                         <input type="alo" maxlength="5" minlength="4" placeholder="Data de vencimento xx/xx" name="vencimento" />

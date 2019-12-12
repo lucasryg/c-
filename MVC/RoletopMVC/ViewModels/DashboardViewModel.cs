@@ -5,14 +5,14 @@ namespace RoleTopMVC.ViewModels
 {
     public class DashboardViewModel : BaseViewModel
     {
-        public List<Aluga> Aluga {get;set;}
+        public List<Aluga> alugas {get;set;}
         public uint PedidosAprovados {get;set;}
         public uint PedidosReprovados {get;set;}
         public uint PedidosPendentes {get;set;}
 
         public DashboardViewModel()
         {
-            this.Aluga = new List<Aluga>();
+            this.alugas = new List<Aluga>();
         }
     }
 }

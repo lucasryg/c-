@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoletopMVC.Repositories;
 using RoletopMVC.ViewModels;
 using RoleTopMVC.Enum;
 using RoleTopMVC.Models;
@@ -15,7 +16,7 @@ namespace RoleTopMVC.Controllers
 
         private ClienteRepository clienteRepository = new ClienteRepository();
 
-        AlugaRepository alugaRepository = new AlugaRepository();
+        PagamentoRepository pagamentoRepository = new PagamentoRepository();
 
         [HttpGet]
         public IActionResult Login()
@@ -53,7 +54,7 @@ namespace RoleTopMVC.Controllers
                                 HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
                                 HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
                                 
-                                return RedirectToAction("Historico" , "Cliente");
+                                return RedirectToAction("FormaPag" , "Pagamento");
                             
                             default:
                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
@@ -86,7 +87,7 @@ namespace RoleTopMVC.Controllers
         public IActionResult Historico()
         {
             var emailCliente = ObterUsuarioSession();
-            var alugaCliente = alugaRepository.ObterTodosPorCliente(emailCliente);
+            var alugaCliente = pagamentoRepository.ObterTodosPorCliente(emailCliente);
             
             return View(new HistoricoViewModel()
             {

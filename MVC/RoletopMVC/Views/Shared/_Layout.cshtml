@@ -17,7 +17,15 @@
                     <ul>
                        
                         <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" ><img id="logo" src="../img/logo.png" alt="Logo" title="logo role top"></a></li>
+                        @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
+                        {
                         <li class="bt-common-menu"><a onclick="toggleMobileMenu()" style="height: 94px;" asp-controller="Cliente" asp-action="Login"><img id="ingresso" src="../img/tickts white.png" alt="Ingresso" title="icone para a alugar">Alugue nosso espaço!</a></li>
+                        }
+                        else
+                        {
+                            <li class="bt-common-menu"><a onclick="toggleMobileMenu()" style="height: 94px;" asp-controller="Pagamento" asp-action="FormaPag"><img id="ingresso" src="../img/tickts white.png" alt="Ingresso" title="icone para a alugar">Alugue nosso espaço!</a></li>
+                        }
+                 
                             <div id="rightside">
                                 <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("index" , "Home")#labelnews'>Noticías</a></li>
                                 <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Nav" asp-action="Galeria">Galeria</a></li>

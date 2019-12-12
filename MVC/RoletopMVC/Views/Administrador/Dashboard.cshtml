@@ -35,7 +35,7 @@
                                 <th>Som</th>
                                 <th>ACEITAR</th>
                             </tr>
-                            @foreach (var aluga in Model.Aluga)
+                            @foreach (var aluga in Model.alugas)
                             {    
                             <tr>
                                 <td>23/05/19</td>
@@ -46,9 +46,6 @@
                                 <td>@aluga.Publico</td>
                                 <td>@aluga.Iluminacao</td>
                                 <td>@aluga.Som</td>
-                                <td><a href='@Url.Action("Aprovar", "Aluga", new {id = @aluga.Id})'><i class="fas fa-check"></i></a></td>
-                                <td><a href='@Url.Action("Reprovar", "Aluga", new {id = @aluga.Id})'><i class="fas fa-times"></i></a></td>
-                                
                             </tr>
                             }
                         </table>

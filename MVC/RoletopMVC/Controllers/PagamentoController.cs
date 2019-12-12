@@ -17,8 +17,6 @@ namespace RoletopMVC.Controllers
 
         TiposDeEventoRepository tiposDeEventoRepository = new TiposDeEventoRepository();
 
-        AlugaRepository alugaRepository = new AlugaRepository();
-
         ClienteRepository clienteRepository = new ClienteRepository();
         
         PubPrivRepository pubPrivRepository = new PubPrivRepository();
@@ -70,7 +68,6 @@ namespace RoletopMVC.Controllers
         {
             //Vem do Model.Aluga
             // Pagamento repositoty aqui
-
             Aluga aluga = new Aluga(
             form["tipoEvento"],
             form["PubPriv"],
@@ -78,11 +75,23 @@ namespace RoletopMVC.Controllers
             form["som"],
             form["formaDePagamento"],
             form["numero"],
-            form["nome"],
+            form["nomeCartao"],
             form["vencimento"],
             form["CVV"]
             //! Colocar os dados do cartao no Model.Aluga 
             );
+
+            Cliente cliente = new Cliente()
+            {
+            Nome = form["nome"],
+            Email = form["email"],
+            Cpf = form["cpf"],
+            Telefone = form["telefone"],
+            DataNascimento = DateTime.Parse(form["data-nascimento"])
+            };
+
+            aluga.Cliente = cliente;
+
 
             if (pagamentoRepository.Inserir(aluga))
             {
@@ -107,10 +116,10 @@ namespace RoletopMVC.Controllers
 
         public IActionResult Reprovar(ulong id)
         {
-            var aluga = alugaRepository.ObterPor(id);
+            var aluga =pagamentoRepository.ObterPor(id);
             aluga.Status = (uint) StatusAluga.REPROVADO;
 
-            if(alugaRepository.Atualizar(aluga))
+            if(pagamentoRepository.Atualizar(aluga))
             {
                 return RedirectToAction("Dashboard", "Administrador");
             }

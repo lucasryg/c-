@@ -8,7 +8,7 @@ namespace RoleTopMVC.Controllers
 {
     public class AdministradorController : AbstractController
     {
-        AlugaRepository alugaRepository = new AlugaRepository();
+        PagamentoRepository pagamentoRepository= new PagamentoRepository();
         public IActionResult Dashboard()
         {
             var ninguemLogado = string.IsNullOrEmpty(ObterUsuarioTipoSession());
@@ -16,7 +16,7 @@ namespace RoleTopMVC.Controllers
             if (!ninguemLogado && 
             (uint) TiposUsuario.ADMINISTRADOR == uint.Parse(ObterUsuarioTipoSession())) {
 
-                var alugas = alugaRepository.ObterTodos();
+                var alugas = pagamentoRepository.ObterTodos();
 
                 DashboardViewModel dashboardViewModel = new DashboardViewModel ();
 
@@ -30,7 +30,7 @@ namespace RoleTopMVC.Controllers
                             break;
                         default:
                             dashboardViewModel.PedidosPendentes++;
-                            dashboardViewModel.Aluga.Add (aluga);
+                            dashboardViewModel.alugas.Add (aluga);
                             break;
                     }
                 }
@@ -41,8 +41,7 @@ namespace RoleTopMVC.Controllers
             } 
             else 
             {
-                return View ("Erro", new RespostaViewModel("alo"){
-                    NomeView = "Dashboard",
+                return View ("Erro", new RespostaViewModel(){
                     Mensagem = "Você não tem permissão para acessar o Dashboard"
                 });
 

@@ -26,6 +26,16 @@ namespace RoletopMVC.Repositories
             return true;            
         }
 
+        public List<Aluga> ObterTodosPorCliente (string emailCliente) {
+            List<Aluga> alugas = new List<Aluga> ();
+            foreach (var aluga in ObterTodos ()) {
+                if (aluga.Cliente.Email.Equals (emailCliente)) {
+                    alugas.Add (aluga);
+                }
+            }
+            return alugas;
+        }
+
         public List<Aluga> ObterTodos()
         {
             var linhas = File.ReadAllLines(PATH);
@@ -34,14 +44,21 @@ namespace RoletopMVC.Repositories
             foreach (var item in linhas)
             {
                     Aluga aluga = new Aluga();
+                    aluga.Id = ulong.Parse(ExtrairValorDoCampo("id", item));
+                    aluga.Status = uint.Parse(ExtrairValorDoCampo("status_pedido", item));  
+                    aluga.Cliente.Nome = ExtrairValorDoCampo("nome", item);
+                    aluga.Cliente.Email = ExtrairValorDoCampo("email", item);
+                    aluga.Cliente.Cpf = ExtrairValorDoCampo("cpf", item);
+                    aluga.Cliente.Telefone = ExtrairValorDoCampo("telefone", item);
+                    aluga.Cliente.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data-nascimento", item));
                     aluga.TipoEvento = ExtrairValorDoCampo("tipoEvento" , item);
                     aluga.Publico = ExtrairValorDoCampo("PubPrib" , item);
                     aluga.Iluminacao = ExtrairValorDoCampo("ilumincao" , item);
                     aluga.Som = ExtrairValorDoCampo("som" , item);
                     aluga.FormaPagamento = ExtrairValorDoCampo("formaDePagamento" , item);
                     aluga.NumeroCartao = ExtrairValorDoCampo("numero" , item);
-                    aluga.NomeCartao = ExtrairValorDoCampo("nome" , item);
-                aluga.DataVencimento = ExtrairValorDoCampo("vencimento" , item);
+                    aluga.NomeCartao = ExtrairValorDoCampo("nomeCartao" , item);
+                    aluga.DataVencimento = ExtrairValorDoCampo("vencimento" , item);
                     aluga.CVV = ExtrairValorDoCampo("CVV" , item);
 
                     alugas.Add(aluga);
@@ -50,11 +67,51 @@ namespace RoletopMVC.Repositories
             return alugas;
         }
 
+        public Aluga ObterPor(ulong id)
+        {
+            var alugueisTotais = ObterTodos();
+            foreach (var item in alugueisTotais)
+            {
+                if (id.Equals(item.Id))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public bool Atualizar(Aluga aluga)
+        {
+            var alugueisTotais = File.ReadAllLines(PATH);
+            var alugaCSV = PrepararRegistroCSV(aluga);
+            var linhaPedido = -1;
+            var resultado = false;
+            
+            for (int i = 0; i < alugueisTotais.Length; i++)
+            {
+                var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", alugueisTotais[i]));
+                if(aluga.Id.Equals(idConvertido))
+                {
+                    linhaPedido = i;
+                    resultado = true;
+                    break;
+                }
+            }
+
+            if(resultado)
+            {
+                alugueisTotais[linhaPedido] = alugaCSV;
+                File.WriteAllLines(PATH, alugueisTotais);
+            }
+
+            return resultado;
+        }
+
 
 
         private string PrepararRegistroCSV(Aluga aluga)
         {
-            return $"tipoEvento={aluga.TipoEvento};PubPriv={aluga.Publico};iluminacao={aluga.Iluminacao};som={aluga.Som};formaDePagamento={aluga.FormaPagamento};numero={aluga.NumeroCartao};nome={aluga.NomeCartao};vencimento={aluga.DataVencimento};CVV={aluga.CVV}";
+            return $"id={aluga.Id};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};cpf={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};data-nascimento={aluga.Cliente.DataNascimento};tipoEvento={aluga.TipoEvento};PubPriv={aluga.Publico};iluminacao={aluga.Iluminacao};som={aluga.Som};formaDePagamento={aluga.FormaPagamento};numero={aluga.NumeroCartao};nomeCartao={aluga.NomeCartao};vencimento={aluga.DataVencimento};CVV={aluga.CVV}";
         
 
 

@@ -1,2 +1,2 @@
-tipo_usuario=0;nome=admin;email=admin@gmail.com;senha=admin;cpf=1;telefone=;data-nascimento=;
-tipo_usuario=1;nome=lucas;email=lucas@gmail.com;senha=123123;cpf=321321321;telefone=32132131;data-nascimento=23/02/2222 00:00:00;
+tipo_usuario=0;nome=admin;email=lulu@email;senha=admin;cpf=;telefone=;data-nascimento=01/01/1000 00:00:00
+tipo_usuario=1;nome=lucas;email=lucas@gmail.com;senha=123123;cpf=321321321;telefone=32132131;data-nascimento=23/02/2222 00:00:00
