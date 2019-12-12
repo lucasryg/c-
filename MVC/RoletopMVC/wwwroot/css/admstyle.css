@@ -12,7 +12,7 @@ body{
 
 p{
     font-family: 'Source Sans Pro', sans-serif;
-    color: white;
+    color: black;
 }
 
 a{
@@ -286,7 +286,8 @@ table, th, td {
     
     #painel {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 850px;
     }
     
     h2 {
@@ -306,11 +307,11 @@ table, th, td {
     
     h4 {
         font-size: 2em;
-        font-family: 'Fredoka One', cursive;
+        font-family: 'Source Sans Pro', sans-serif;
     }
     
     .box-status-pedidos {
-        width: 30%;
+        width: 20%;
         padding-top: .5em;
         text-align: center;
     }
@@ -320,15 +321,15 @@ table, th, td {
     }
     
     .box-status-pedidos.reprovados {
-        background-color: #a70000;
+        background-color: #7D0093;
     }
     
     .box-status-pedidos.aprovados {
-        background-color: #669100;
+        background-color: #FFC600;
     }
     
     .box-status-pedidos.pendentes {
-        background-color: #ff9933;
+        background-color: rebeccapurple;
     }
     
     table {
@@ -340,24 +341,27 @@ table, th, td {
         word-break: normal;
     }
     
-    table th {
-        background-color:#a70000;
-    }
     
     table a {
         text-decoration: none;
         color: #ff9933;
     }
+
+    footer{
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        height: 20%;
+        position:absolute;
+        bottom:0;
+        width:100%;
     
-    table a:hover {
-        text-decoration: underline;
+    
     }
     
-    tfoot td {
-        text-align: center;
-        color: #ff9933;
-        background-color: #a70000;
-    }
+   
+    
+    
     
     thead > tr:first-child > th:last-child {
         padding: 0 .5em;

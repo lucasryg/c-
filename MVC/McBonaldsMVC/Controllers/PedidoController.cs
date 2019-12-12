@@ -39,6 +39,8 @@ namespace McBonaldsMVC.Controllers {
             return View (pvm);
         }
 
+        
+
         public IActionResult Registrar (IFormCollection form) {
             ViewData["Action"] = "Pedido";
             Pedido pedido = new Pedido ();
@@ -86,6 +88,27 @@ namespace McBonaldsMVC.Controllers {
                     UsuarioNome = ObterUsuarioNomeSession()
                 });
             }
+        }
+
+        public IActionResult Aprovar(ulong id)
+        {
+            var pedido = pedidoRepository.ObterPor(id);
+            pedido.Status = (uint) StatusPedido.APROVADO;
+
+            if(pedidoRepository.Atualizar(pedido))
+            {
+                return RedirectToAction("Dashboard", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel("Não foi possível aprovar este pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+
         }
 
         

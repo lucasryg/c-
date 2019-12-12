@@ -1,4 +1,4 @@
-Coisas para eu fazer 
+﻿Coisas para eu fazer 
 :
 
 tela logoff
@@ -35,6 +35,9 @@ Estava tentando resolver o erro, mas sem ideias.
 talvez ele esteja guardando dois valores num atributo só
 
 Pedir ajuda para o sor 
+----------------------------------------------------------------------------
+
+tela pedido 
 
 
 

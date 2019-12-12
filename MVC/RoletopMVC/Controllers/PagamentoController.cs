@@ -68,18 +68,19 @@ namespace RoletopMVC.Controllers
         {
             //Vem do Model.Aluga
             // Pagamento repositoty aqui
-            Aluga aluga = new Aluga(
-            form["tipoEvento"],
-            form["PubPriv"],
-            form["iluminacao"],
-            form["som"],
-            form["formaDePagamento"],
-            form["numero"],
-            form["nomeCartao"],
-            form["vencimento"],
-            form["CVV"]
+            Aluga aluga = new Aluga();
+            
+            aluga.TipoEvento = form["tipoEvento"];
+            aluga.Publico = form["PubPriv"];
+            aluga.Iluminacao = form["iluminacao"];
+            aluga.Som = form["som"];
+            aluga.FormaPagamento = form["formaDePagamento"];
+            aluga.NumeroCartao = form["numero"];
+            aluga.NomeCartao = form["nomeCartao"];
+            aluga.DataVencimento = form["vencimento"];
+            aluga.CVV = form["CVV"];
+            
             //! Colocar os dados do cartao no Model.Aluga 
-            );
 
             Cliente cliente = new Cliente()
             {
@@ -113,6 +114,28 @@ namespace RoletopMVC.Controllers
             //Agora, pedidoRepository (necessario {inserir})
 
         }
+
+        public IActionResult Aprovar(ulong id)
+        {
+            var aluga = pagamentoRepository.ObterPor(id);
+            aluga.Status = (uint) StatusAluga.APROVADO;
+
+            if(pagamentoRepository.Atualizar(aluga))
+            {
+                return RedirectToAction("Dashboard", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel("Não foi possível aprovar este pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+
+        }
+
 
         public IActionResult Reprovar(ulong id)
         {

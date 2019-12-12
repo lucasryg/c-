@@ -52,13 +52,13 @@ namespace RoletopMVC.Repositories
                     aluga.Cliente.Telefone = ExtrairValorDoCampo("telefone", item);
                     aluga.Cliente.DataNascimento = DateTime.Parse(ExtrairValorDoCampo("data-nascimento", item));
                     aluga.TipoEvento = ExtrairValorDoCampo("tipoEvento" , item);
-                    aluga.Publico = ExtrairValorDoCampo("PubPrib" , item);
-                    aluga.Iluminacao = ExtrairValorDoCampo("ilumincao" , item);
-                    aluga.Som = ExtrairValorDoCampo("som" , item);
-                    aluga.FormaPagamento = ExtrairValorDoCampo("formaDePagamento" , item);
-                    aluga.NumeroCartao = ExtrairValorDoCampo("numero" , item);
-                    aluga.NomeCartao = ExtrairValorDoCampo("nomeCartao" , item);
-                    aluga.DataVencimento = ExtrairValorDoCampo("vencimento" , item);
+                    aluga.Publico = ExtrairValorDoCampo("PubPriv", item);
+                    aluga.Iluminacao = ExtrairValorDoCampo("iluminacao", item);
+                    aluga.Som = ExtrairValorDoCampo("som", item);
+                    aluga.FormaPagamento = ExtrairValorDoCampo("formaDePagamento", item);
+                    aluga.NumeroCartao = ExtrairValorDoCampo("numero", item);
+                    aluga.NomeCartao = ExtrairValorDoCampo("nomeCartao", item);
+                    aluga.DataVencimento = ExtrairValorDoCampo("vencimento", item);
                     aluga.CVV = ExtrairValorDoCampo("CVV" , item);
 
                     alugas.Add(aluga);
@@ -111,7 +111,7 @@ namespace RoletopMVC.Repositories
 
         private string PrepararRegistroCSV(Aluga aluga)
         {
-            return $"id={aluga.Id};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};cpf={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};data-nascimento={aluga.Cliente.DataNascimento};tipoEvento={aluga.TipoEvento};PubPriv={aluga.Publico};iluminacao={aluga.Iluminacao};som={aluga.Som};formaDePagamento={aluga.FormaPagamento};numero={aluga.NumeroCartao};nomeCartao={aluga.NomeCartao};vencimento={aluga.DataVencimento};CVV={aluga.CVV}";
+            return $"id={aluga.Id};status_pedido={aluga.Status};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};cpf={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};data-nascimento={aluga.Cliente.DataNascimento};tipoEvento={aluga.TipoEvento};PubPriv={aluga.Publico};iluminacao={aluga.Iluminacao};som={aluga.Som};formaDePagamento={aluga.FormaPagamento};numero={aluga.NumeroCartao};nomeCartao={aluga.NomeCartao};vencimento={aluga.DataVencimento};CVV={aluga.CVV}";
         
 
 
