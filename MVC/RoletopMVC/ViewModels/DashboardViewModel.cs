@@ -3,7 +3,7 @@ using RoleTopMVC.Models;
 
 namespace RoleTopMVC.ViewModels
 {
-    public class DashboardViewModel : BaseViewModel
+public class DashboardViewModel : BaseViewModel
     {
         public List<Aluga> alugas {get;set;}
         public uint PedidosAprovados {get;set;}

@@ -31,6 +31,8 @@
 
                 <input id="data-nascimento" value="@Model.cliente.DataNascimento"  type="date" maxlength="20" minlength="3" name="data-nascimento">
 
+                <br/>   
+
                     <label for="tipoEvento">Selecione seu tipo de evento</label><br>
                     <select name="tipoEvento">
                     @foreach(var tiposEventos in Model.TipoDeEvento){

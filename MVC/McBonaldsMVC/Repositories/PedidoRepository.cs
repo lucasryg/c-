@@ -47,7 +47,7 @@ namespace McBonaldsMVC.Repositories {
             foreach (var linha in linhas) {
                 Pedido pedido = new Pedido ();
 
-                pedido.Id = ulong.Parse(ExtrairValorDoCampo("id", linha));
+                pedido.Id = (ulong) uint.Parse(ExtrairValorDoCampo("id", linha));
                 pedido.Status = uint.Parse(ExtrairValorDoCampo("status_pedido", linha));    
                 pedido.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
                 pedido.Cliente.Endereco = ExtrairValorDoCampo("cliente_endereco",linha);

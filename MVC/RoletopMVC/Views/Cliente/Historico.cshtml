@@ -5,30 +5,30 @@
 </head>
 <body>
         <section >
-            <div id="table">
-
-            <table>
-                <tr>
-                    <th>Data</th>
-                    <th>Nome</th>
-                    <th>Tipo de evento</th>
-                    <th>Público/Privado</th>
-                    <th>Iluminação</th>
-                    <th>Som</th>
-                </tr>
-                <tr>
-                    @foreach (var aluga in Model.Aluga)
-                    {
-                    <td>@aluga.DataPedido</td>
-                    <td>@aluga.Cliente.Nome</td>
-                    <td>@aluga.TipoEvento</td>
-                    <td>@aluga.Publico</td>
-                    <td>@aluga.Iluminacao</td>
-                    <td>@aluga.Som</td>
-                    }
-                </tr>
-            </table>
-            </div>
-        </section>
+                <div id="table">
+                        <table>
+                            <tr>
+                                <th>Data</th>
+                                <th>Nome</th>
+                                <th>Tipo de evento</th>
+                                <th>Público/Privado</th>
+                                <th>Iluminação</th>
+                                <th>Som</th>
+                                
+                            </tr>
+                            @foreach (var aluga in Model.Aluga)
+                            {    
+                            <tr>
+                               <td>@aluga.DataPedido</td>
+                                <td>@aluga.Cliente.Nome</td>
+                                <td>@aluga.TipoEvento</td>
+                                <td>@aluga.Publico</td>
+                                <td>@aluga.Iluminacao</td>
+                                <td>@aluga.Som</td>
+                            </tr>
+                            }
+                        </table>
+                    </section> 
+            </div>   
 </body>
 </html>

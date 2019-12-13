@@ -1,3 +1,4 @@
 tipo_usuario=0;nome=admin;email=lulu@email;senha=admin;cpf=;telefone=;data-nascimento=01/01/1000 00:00:00
 tipo_usuario=1;nome=lucas;email=lucas@gmail.com;senha=123123;cpf=321321321;telefone=32132131;data-nascimento=23/02/2222 00:00:00
 tipo_usuario=1;nome=joao;email=joao@email;senha=123123;cpf=12321321;telefone=321321321;data-nascimento=31/03/2003 00:00:00
+tipo_usuario=1;nome=murilo;email=murilo@email.com;senha=123456;cpf=52584781816;telefone=123123;data-nascimento=10/10/1000 00:00:00

@@ -20,7 +20,9 @@ namespace RoletopMVC.Repositories
 
         public bool Inserir(Aluga aluga)
         {
-            var linha = new string[] { PrepararRegistroCSV(aluga) };
+            var quantidadePedidos = File.ReadAllLines(PATH).Length;
+            aluga.Id = (ulong) ++quantidadePedidos;
+            var linha = new string[] {PrepararRegistroCSV(aluga)};
             File.AppendAllLines(PATH, linha);
 
             return true;            
@@ -61,7 +63,7 @@ namespace RoletopMVC.Repositories
                     aluga.DataVencimento = ExtrairValorDoCampo("vencimento", item);
                     aluga.CVV = ExtrairValorDoCampo("CVV" , item);
                     aluga.DataPedido = DateTime.Parse(ExtrairValorDoCampo("dataPedido", item));
-                   
+                
                     
                     alugas.Add(aluga);
                             
