@@ -7,6 +7,7 @@ namespace RoleTopMVC.Models
     {
         public ulong Id {get;set;}
         public Cliente Cliente {get;set;}
+        public DateTime DataPedido {get;set;}
         public string TipoEvento {get;set;}
         public string Publico {get;set;}
         public string Iluminacao {get;set;}
@@ -17,7 +18,6 @@ namespace RoleTopMVC.Models
         public string DataVencimento {get;set;}
         public string CVV {get;set;} 
         public uint Status {get;set;}
-
 
         public Aluga()
         {

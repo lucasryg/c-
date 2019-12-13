@@ -79,6 +79,7 @@ namespace RoletopMVC.Controllers
             aluga.NomeCartao = form["nomeCartao"];
             aluga.DataVencimento = form["vencimento"];
             aluga.CVV = form["CVV"];
+
             
             //! Colocar os dados do cartao no Model.Aluga 
 
@@ -90,6 +91,9 @@ namespace RoletopMVC.Controllers
             Telefone = form["telefone"],
             DataNascimento = DateTime.Parse(form["data-nascimento"])
             };
+
+            aluga.DataPedido = DateTime.Now;
+
 
             aluga.Cliente = cliente;
 

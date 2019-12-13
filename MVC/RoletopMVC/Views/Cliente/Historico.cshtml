@@ -1,21 +1,11 @@
 @model RoleTopMVC.ViewModels.HistoricoViewModel
 <link href="~/css/admstyle.css" rel="stylesheet" type="text/css">
 <head>
-        <style>
-                table, th, td {
-                border: 1px solid white;
-                border-collapse: collapse;
-                }
-                th, td {
-                padding: 5px;
-                }
-                th {
-                text-align: left;
-                }
-                </style>
+      
 </head>
 <body>
-        <section style="height: 20em" id="sectiontwo">
+        <section >
+            <div id="table">
 
             <table>
                 <tr>
@@ -29,18 +19,16 @@
                 <tr>
                     @foreach (var aluga in Model.Aluga)
                     {
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>@aluga.DataPedido</td>
+                    <td>@aluga.Cliente.Nome</td>
+                    <td>@aluga.TipoEvento</td>
+                    <td>@aluga.Publico</td>
+                    <td>@aluga.Iluminacao</td>
+                    <td>@aluga.Som</td>
                     }
                 </tr>
             </table>
-        </section>
             </div>
+        </section>
 </body>
 </html>

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RoletopMVC.Repositories;
-using RoletopMVC.ViewModels;
 using RoleTopMVC.Enum;
 using RoleTopMVC.Models;
 using RoleTopMVC.Repositories;

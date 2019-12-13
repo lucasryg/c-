@@ -60,7 +60,9 @@ namespace RoletopMVC.Repositories
                     aluga.NomeCartao = ExtrairValorDoCampo("nomeCartao", item);
                     aluga.DataVencimento = ExtrairValorDoCampo("vencimento", item);
                     aluga.CVV = ExtrairValorDoCampo("CVV" , item);
-
+                    aluga.DataPedido = DateTime.Parse(ExtrairValorDoCampo("dataPedido", item));
+                   
+                    
                     alugas.Add(aluga);
                             
             }
@@ -90,6 +92,7 @@ namespace RoletopMVC.Repositories
             for (int i = 0; i < alugueisTotais.Length; i++)
             {
                 var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", alugueisTotais[i]));
+                
                 if(aluga.Id.Equals(idConvertido))
                 {
                     linhaPedido = i;
@@ -111,10 +114,7 @@ namespace RoletopMVC.Repositories
 
         private string PrepararRegistroCSV(Aluga aluga)
         {
-            return $"id={aluga.Id};status_pedido={aluga.Status};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};cpf={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};data-nascimento={aluga.Cliente.DataNascimento};tipoEvento={aluga.TipoEvento};PubPriv={aluga.Publico};iluminacao={aluga.Iluminacao};som={aluga.Som};formaDePagamento={aluga.FormaPagamento};numero={aluga.NumeroCartao};nomeCartao={aluga.NomeCartao};vencimento={aluga.DataVencimento};CVV={aluga.CVV}";
-        
-
-
+            return $"id={aluga.Id};status_pedido={aluga.Status};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};cpf={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};data-nascimento={aluga.Cliente.DataNascimento};tipoEvento={aluga.TipoEvento};PubPriv={aluga.Publico};iluminacao={aluga.Iluminacao};som={aluga.Som};formaDePagamento={aluga.FormaPagamento};numero={aluga.NumeroCartao};nomeCartao={aluga.NomeCartao};vencimento={aluga.DataVencimento};CVV={aluga.CVV};dataPedido={aluga.DataPedido};";
     }
 }
 }

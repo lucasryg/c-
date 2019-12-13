@@ -1,1 +1,250 @@
-Terminar o Historico/ que é a tela de pedido
+//! PAGAMENTOCONTROLLER 
+using System;
+using System.Collections.Generic;
+using System.IO;
+using RoleTopMVC.Models;
+using RoleTopMVC.Repositories;
+
+namespace RoletopMVC.Repositories
+{
+    public class PagamentoRepository : RepositoryBase
+    {
+        private const string PATH = "Database/Aluga.csv";
+
+        public PagamentoRepository()
+        {
+            if(!File.Exists(PATH))
+            {
+                File.Create(PATH).Close();
+            }
+        }
+
+        public bool Inserir(Aluga aluga)
+        {
+            var linha = new string[] { PrepararRegistroCSV(aluga) };
+            File.AppendAllLines(PATH, linha);
+
+            return true;            
+        }
+
+        public List<Aluga> ObterTodosPorCliente (string emailCliente) {
+            List<Aluga> alugas = new List<Aluga> ();
+            foreach (var aluga in ObterTodos ()) {
+                if (aluga.Cliente.Email.Equals (emailCliente)) {
+                    alugas.Add (aluga);
+                }
+            }
+            return alugas;
+        }
+
+        public List<Aluga> ObterTodos()
+        {
+            var linhas = File.ReadAllLines(PATH);
+            List<Aluga> alugas = new List<Aluga>();
+
+            foreach (var item in linhas)
+            {
+                    Aluga aluga = new Aluga();
+                    aluga.Id = ulong.Parse(ExtrairValorDoCampo("id", item));
+                    aluga.Status = uint.Parse(ExtrairValorDoCampo("status_pedido", item));  
+                    aluga.Cliente.Nome = ExtrairValorDoCampo("nome", item);
+                    aluga.Cliente.Email = ExtrairValorDoCampo("email", item);
+                    aluga.Cliente.Cpf = ExtrairValorDoCampo("cpf", item);
+                    aluga.Cliente.Telefone = ExtrairValorDoCampo("telefone", item);
+                    aluga.DataHora = DateTime.Parse(ExtrairValorDoCampo("dataHora", item));
+                    aluga.TipoEvento = ExtrairValorDoCampo("tipoEvento" , item);
+                    aluga.Publico = ExtrairValorDoCampo("PubPriv", item);
+                    aluga.Iluminacao = ExtrairValorDoCampo("iluminacao", item);
+                    aluga.Som = ExtrairValorDoCampo("som", item);
+                    aluga.FormaPagamento = ExtrairValorDoCampo("formaDePagamento", item);
+                    aluga.NumeroCartao = ExtrairValorDoCampo("numero", item);
+                    aluga.NomeCartao = ExtrairValorDoCampo("nomeCartao", item);
+                    aluga.DataVencimento = ExtrairValorDoCampo("vencimento", item);
+                    aluga.CVV = ExtrairValorDoCampo("CVV" , item);
+                    aluga.DataPedido = DateTime.Parse(ExtrairValorDoCampo("dataPedido", item));
+                   
+                    
+                    alugas.Add(aluga);
+                            
+            }
+            return alugas;
+        }
+
+        public Aluga ObterPor(ulong id)
+        {
+            var alugueisTotais = ObterTodos();
+            foreach (var item in alugueisTotais)
+            {
+                if (id.Equals(item.Id))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public bool Atualizar(Aluga aluga)
+        {
+            var alugueisTotais = File.ReadAllLines(PATH);
+            var alugaCSV = PrepararRegistroCSV(aluga);
+            var linhaPedido = -1;
+            var resultado = false;
+            
+            for (int i = 0; i < alugueisTotais.Length; i++)
+            {
+                var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", alugueisTotais[i]));
+                if(aluga.Id.Equals(idConvertido))
+                {
+                    linhaPedido = i;
+                    resultado = true;
+                    break;
+                }
+            }
+
+            if(resultado)
+            {
+                alugueisTotais[linhaPedido] = alugaCSV;
+                File.WriteAllLines(PATH, alugueisTotais);
+            }
+
+            return resultado;
+        }
+
+
+
+        private string PrepararRegistroCSV(Aluga aluga)
+        {
+            return $"id={aluga.Id};status_pedido={aluga.Status};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};cpf={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};dataHora={aluga.DataHora};tipoEvento={aluga.TipoEvento};PubPriv={aluga.Publico};iluminacao={aluga.Iluminacao};som={aluga.Som};formaDePagamento={aluga.FormaPagamento};numero={aluga.NumeroCartao};nomeCartao={aluga.NomeCartao};vencimento={aluga.DataVencimento};CVV={aluga.CVV};dataPedido={aluga.DataPedido};";
+    }
+}
+}
+
+//! PAGAMENTOREPOSITORY
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using RoleTopMVC.Models;
+using RoleTopMVC.Repositories;
+
+namespace RoletopMVC.Repositories
+{
+    public class PagamentoRepository : RepositoryBase
+    {
+        private const string PATH = "Database/Aluga.csv";
+
+        public PagamentoRepository()
+        {
+            if(!File.Exists(PATH))
+            {
+                File.Create(PATH).Close();
+            }
+        }
+
+        public bool Inserir(Aluga aluga)
+        {
+            var linha = new string[] { PrepararRegistroCSV(aluga) };
+            File.AppendAllLines(PATH, linha);
+
+            return true;            
+        }
+
+        public List<Aluga> ObterTodosPorCliente (string emailCliente) {
+            List<Aluga> alugas = new List<Aluga> ();
+            foreach (var aluga in ObterTodos ()) {
+                if (aluga.Cliente.Email.Equals (emailCliente)) {
+                    alugas.Add (aluga);
+                }
+            }
+            return alugas;
+        }
+
+        public List<Aluga> ObterTodos()
+        {
+            var linhas = File.ReadAllLines(PATH);
+            List<Aluga> alugas = new List<Aluga>();
+
+            foreach (var item in linhas)
+            {
+                    Aluga aluga = new Aluga();
+                    aluga.Id = ulong.Parse(ExtrairValorDoCampo("id", item));
+                    aluga.Status = uint.Parse(ExtrairValorDoCampo("status_pedido", item));  
+                    aluga.Cliente.Nome = ExtrairValorDoCampo("nome", item);
+                    aluga.Cliente.Email = ExtrairValorDoCampo("email", item);
+                    aluga.Cliente.Cpf = ExtrairValorDoCampo("cpf", item);
+                    aluga.Cliente.Telefone = ExtrairValorDoCampo("telefone", item);
+                    aluga.DataHora = DateTime.Parse(ExtrairValorDoCampo("dataHora", item));
+                    aluga.TipoEvento = ExtrairValorDoCampo("tipoEvento" , item);
+                    aluga.Publico = ExtrairValorDoCampo("PubPriv", item);
+                    aluga.Iluminacao = ExtrairValorDoCampo("iluminacao", item);
+                    aluga.Som = ExtrairValorDoCampo("som", item);
+                    aluga.FormaPagamento = ExtrairValorDoCampo("formaDePagamento", item);
+                    aluga.NumeroCartao = ExtrairValorDoCampo("numero", item);
+                    aluga.NomeCartao = ExtrairValorDoCampo("nomeCartao", item);
+                    aluga.DataVencimento = ExtrairValorDoCampo("vencimento", item);
+                    aluga.CVV = ExtrairValorDoCampo("CVV" , item);
+                    aluga.DataPedido = DateTime.Parse(ExtrairValorDoCampo("dataPedido", item));
+                   
+                    
+                    alugas.Add(aluga);
+                            
+            }
+            return alugas;
+        }
+
+        public Aluga ObterPor(ulong id)
+        {
+            var alugueisTotais = ObterTodos();
+            foreach (var item in alugueisTotais)
+            {
+                if (id.Equals(item.Id))
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+
+        public bool Atualizar(Aluga aluga)
+        {
+            var alugueisTotais = File.ReadAllLines(PATH);
+            var alugaCSV = PrepararRegistroCSV(aluga);
+            var linhaPedido = -1;
+            var resultado = false;
+            
+            for (int i = 0; i < alugueisTotais.Length; i++)
+            {
+                var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", alugueisTotais[i]));
+                if(aluga.Id.Equals(idConvertido))
+                {
+                    linhaPedido = i;
+                    resultado = true;
+                    break;
+                }
+            }
+
+            if(resultado)
+            {
+                alugueisTotais[linhaPedido] = alugaCSV;
+                File.WriteAllLines(PATH, alugueisTotais);
+            }
+
+            return resultado;
+        }
+
+
+
+        private string PrepararRegistroCSV(Aluga aluga)
+        {
+            return $"id={aluga.Id};status_pedido={aluga.Status};nome={aluga.Cliente.Nome};email={aluga.Cliente.Email};cpf={aluga.Cliente.Cpf};telefone={aluga.Cliente.Telefone};dataHora={aluga.DataHora};tipoEvento={aluga.TipoEvento};PubPriv={aluga.Publico};iluminacao={aluga.Iluminacao};som={aluga.Som};formaDePagamento={aluga.FormaPagamento};numero={aluga.NumeroCartao};nomeCartao={aluga.NomeCartao};vencimento={aluga.DataVencimento};CVV={aluga.CVV};dataPedido={aluga.DataPedido};";
+    }
+}
+}
+
+public DateTime DataHora {get;set;}
+
+-----------------------------------------------------------------------------------
+
+erro do ID 
+
+Tentar pegar o horario e o dia para fazer o pedido.

@@ -8,20 +8,19 @@ body{
   list-style-type: none;
   font-family: 'Source Sans Pro', sans-serif;
 }
-p{
-  color: white;
-}
-a{
-  color: white;
-}
 
-main{
-  display: flex;
-  justify-content: space-around;
+h2,p,a > strong{
+  color: white;
+  text-decoration: none;
+}
+A{
+  color: white
 }
 /**********************************************
-INICIO NAV
+              INICIO NAV
 **********************************************/
+
+
 nav{
   background-color:transparent;
 }
@@ -62,6 +61,7 @@ nav li{
   right: 50px;
   flex-direction: row;
 }
+
 /**********************************************
               FINAL NAV
 **********************************************/
@@ -74,16 +74,6 @@ select{
   border-radius: 2px;
   box-sizing: border-box;
 
-}
-
-input[type=datetime-local]{
-  width: 30em;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
 input[type=Email]{
@@ -115,6 +105,16 @@ input[type=password] {
   box-sizing: border-box;
 }
 
+input[type=date] {
+  width: 30em;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 input[type=submit] {
   width: 30em;
   background-color: #7D0093;
@@ -124,15 +124,58 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
 }
+
+input[type=alo] {
+  width:36%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=checkbox] {
+  width:22%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+form input, form select {
+  width: 73%;
+  height: 40px;
+  border: none;
+  text-align: left;
+  padding: 0 2px;
+}  
 
 input[type=submit]:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   color: #FFC600;
 }
 
+label{
+    color: white;
+}
+
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#loucura{
+    display: flex;
+}
 
 #color{
+  border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,26 +187,36 @@ section{
   align-items: center;
 }
 
-article{
+.paga{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column ;
 }
 
-
-
-
-label{
-  color: white;
-}
 
 footer{
   background-color: black;
   display: flex;
   justify-content: space-evenly;
   height: 20%;
-  position:absolute;
   bottom:0;
   width:100%;
 
+}
+
+#closenav{
+  display: flex;
+  justify-content: left;
+}
+
+#bandeiras{
+  width: 50%;
+}
+
+#fadas{
+  display: flex;
+  width: 50%;
+}
+
+form{
+  justify-content: center;
 }
